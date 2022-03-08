@@ -9,7 +9,7 @@
 
     <title> Bulkit :: Home</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-	<script src="https://kit.fontawesome.com/e32e92b309.js" crossorigin="anonymous"></script>
+
     <!--Core CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -20,1252 +20,6 @@
 <body class="is-theme-core">
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
-    <style>
-        .testing {
-            display: inherit;
-            position: relative;
-        }
-
-        .testing:before,
-        .testing:after {
-            content: "PandoraID";
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 8px 0;
-            width: 100%;
-            -webkit-clip: rect(0px, 0px, 0px, 0px);
-            clip: rect(0px, 0px, 0px, 0px);
-            background: rgba(255, 255, 255, 0.15);
-            color: rgb(255, 227, 227);
-        }
-
-        .testing:before {
-            left: -3px;
-            top: -2px;
-
-        }
-
-        .testing:after {
-            left: 2px;
-            bottom: -2px;
-
-        }
-
-        .testing:hover {
-            background-color: #8c8cf9;
-            color: rgb(255, 194, 194);
-        }
-
-        .testing:hover:before {
-            animation: glitch-test 1.5s infinite linear alternate-reverse;
-        }
-
-        .testing:hover:after {
-            -webkit-animation: glitch-test 2s infinite linear alternate;
-            animation: glitch-test 2s infinite linear alternate;
-        }
-
-        @-webkit-keyframes glitch-test {
-            0% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            5.88235% {
-                clip: rect(0px, 600px, 0px, 0px);
-            }
-
-            11.76471% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            17.64706% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            23.52941% {
-                clip: rect(100px, 600px, 100px, 0px);
-            }
-
-            29.41176% {
-                clip: rect(0px, 600px, 600px, 0px);
-            }
-
-            35.29412% {
-                clip: rect(100px, 600px, 0px, 0px);
-            }
-
-            41.17647% {
-                clip: rect(0px, 600px, 600px, 0px);
-            }
-
-            47.05882% {
-                clip: rect(100px, 600px, 0px, 0px);
-            }
-
-            52.94118% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            58.82353% {
-                clip: rect(100px, 450px, 100px, 0px);
-            }
-
-            64.70588% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            70.58824% {
-                clip: rect(100px, 450px, 100px, 0px);
-            }
-
-            76.47059% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            82.35294% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            88.23529% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            94.11765% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            100% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-        }
-
-        @keyframes glitch-test {
-            0% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            5.88235% {
-                clip: rect(0px, 600px, 0px, 0px);
-            }
-
-            11.76471% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            17.64706% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            23.52941% {
-                clip: rect(100px, 600px, 100px, 0px);
-            }
-
-            29.41176% {
-                clip: rect(0px, 600px, 600px, 0px);
-            }
-
-            35.29412% {
-                clip: rect(100px, 600px, 0px, 0px);
-            }
-
-            41.17647% {
-                clip: rect(0px, 600px, 600px, 0px);
-            }
-
-            47.05882% {
-                clip: rect(100px, 600px, 0px, 0px);
-            }
-
-            52.94118% {
-                clip: rect(-3px, 600px, 0px, 0px);
-            }
-
-            58.82353% {
-                clip: rect(100px, 450px, 100px, 0px);
-            }
-
-            64.70588% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            70.58824% {
-                clip: rect(100px, 450px, 100px, 0px);
-            }
-
-            76.47059% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            82.35294% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            88.23529% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            94.11765% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-
-            100% {
-                clip: rect(0px, 450px, 0px, 0px);
-            }
-        }
-    </style>
-
-
-
-    <style>
-        .glitch {
-            color: #444f60 !important;
-            font-size: inherit;
-            position: relative;
-            width: 400px;
-            margin: 0 auto;
-        }
-
-        @keyframes noise-anim {
-            0% {
-                clip: rect(146px, 9999px, 119px, 0);
-            }
-
-            5% {
-                clip: rect(10px, 9999px, 138px, 0);
-            }
-
-            10% {
-                clip: rect(30px, 9999px, 148px, 0);
-            }
-
-            15% {
-                clip: rect(53px, 9999px, 115px, 0);
-            }
-
-            20% {
-                clip: rect(5px, 9999px, 94px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(117px, 9999px, 3px, 0);
-            }
-
-            5% {
-                clip: rect(10px, 9999px, 110px, 0);
-            }
-
-            10% {
-                clip: rect(139px, 9999px, 111px, 0);
-            }
-
-            15% {
-                clip: rect(34px, 9999px, 78px, 0);
-            }
-
-            20% {
-                clip: rect(106px, 9999px, 86px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(104px, 9999px, 107px, 0);
-            }
-
-            5% {
-                clip: rect(29px, 9999px, 11px, 0);
-            }
-
-            10% {
-                clip: rect(20px, 9999px, 10px, 0);
-            }
-
-            15% {
-                clip: rect(75px, 9999px, 55px, 0);
-            }
-
-            20% {
-                clip: rect(91px, 9999px, 80px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(13px, 9999px, 73px, 0);
-            }
-
-            5% {
-                clip: rect(12px, 9999px, 55px, 0);
-            }
-
-            10% {
-                clip: rect(98px, 9999px, 65px, 0);
-            }
-
-            15% {
-                clip: rect(92px, 9999px, 98px, 0);
-            }
-
-            20% {
-                clip: rect(106px, 9999px, 5px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(55px, 9999px, 75px, 0);
-            }
-
-            5% {
-                clip: rect(41px, 9999px, 16px, 0);
-            }
-
-            10% {
-                clip: rect(106px, 9999px, 22px, 0);
-            }
-
-            15% {
-                clip: rect(125px, 9999px, 18px, 0);
-            }
-
-            20% {
-                clip: rect(128px, 9999px, 69px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(144px, 9999px, 47px, 0);
-            }
-
-            5% {
-                clip: rect(30px, 9999px, 117px, 0);
-            }
-
-            10% {
-                clip: rect(49px, 9999px, 49px, 0);
-            }
-
-            15% {
-                clip: rect(117px, 9999px, 53px, 0);
-            }
-
-            20% {
-                clip: rect(17px, 9999px, 131px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(140px, 9999px, 53px, 0);
-            }
-
-            5% {
-                clip: rect(44px, 9999px, 26px, 0);
-            }
-
-            10% {
-                clip: rect(125px, 9999px, 145px, 0);
-            }
-
-            15% {
-                clip: rect(63px, 9999px, 138px, 0);
-            }
-
-            20% {
-                clip: rect(150px, 9999px, 7px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(60px, 9999px, 85px, 0);
-            }
-
-            5% {
-                clip: rect(11px, 9999px, 27px, 0);
-            }
-
-            10% {
-                clip: rect(70px, 9999px, 71px, 0);
-            }
-
-            15% {
-                clip: rect(122px, 9999px, 49px, 0);
-            }
-
-            20% {
-                clip: rect(109px, 9999px, 44px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(132px, 9999px, 145px, 0);
-            }
-
-            5% {
-                clip: rect(49px, 9999px, 3px, 0);
-            }
-
-            10% {
-                clip: rect(100px, 9999px, 72px, 0);
-            }
-
-            15% {
-                clip: rect(145px, 9999px, 123px, 0);
-            }
-
-            20% {
-                clip: rect(66px, 9999px, 63px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(88px, 9999px, 37px, 0);
-            }
-
-            5% {
-                clip: rect(36px, 9999px, 137px, 0);
-            }
-
-            10% {
-                clip: rect(3px, 9999px, 122px, 0);
-            }
-
-            15% {
-                clip: rect(114px, 9999px, 117px, 0);
-            }
-
-            20% {
-                clip: rect(60px, 9999px, 101px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(124px, 9999px, 107px, 0);
-            }
-
-            5% {
-                clip: rect(36px, 9999px, 117px, 0);
-            }
-
-            10% {
-                clip: rect(138px, 9999px, 120px, 0);
-            }
-
-            15% {
-                clip: rect(109px, 9999px, 144px, 0);
-            }
-
-            20% {
-                clip: rect(35px, 9999px, 49px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(2px, 9999px, 56px, 0);
-            }
-
-            5% {
-                clip: rect(18px, 9999px, 87px, 0);
-            }
-
-            10% {
-                clip: rect(35px, 9999px, 7px, 0);
-            }
-
-            15% {
-                clip: rect(93px, 9999px, 114px, 0);
-            }
-
-            20% {
-                clip: rect(124px, 9999px, 121px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(24px, 9999px, 62px, 0);
-            }
-
-            5% {
-                clip: rect(16px, 9999px, 45px, 0);
-            }
-
-            10% {
-                clip: rect(65px, 9999px, 138px, 0);
-            }
-
-            15% {
-                clip: rect(29px, 9999px, 88px, 0);
-            }
-
-            20% {
-                clip: rect(136px, 9999px, 35px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(135px, 9999px, 150px, 0);
-            }
-
-            5% {
-                clip: rect(31px, 9999px, 133px, 0);
-            }
-
-            10% {
-                clip: rect(77px, 9999px, 33px, 0);
-            }
-
-            15% {
-                clip: rect(75px, 9999px, 137px, 0);
-            }
-
-            20% {
-                clip: rect(39px, 9999px, 67px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(31px, 9999px, 86px, 0);
-            }
-
-            5% {
-                clip: rect(23px, 9999px, 108px, 0);
-            }
-
-            10% {
-                clip: rect(143px, 9999px, 26px, 0);
-            }
-
-            15% {
-                clip: rect(97px, 9999px, 81px, 0);
-            }
-
-            20% {
-                clip: rect(3px, 9999px, 107px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(114px, 9999px, 100px, 0);
-            }
-
-            5% {
-                clip: rect(21px, 9999px, 98px, 0);
-            }
-
-            10% {
-                clip: rect(21px, 9999px, 4px, 0);
-            }
-
-            15% {
-                clip: rect(14px, 9999px, 92px, 0);
-            }
-
-            20% {
-                clip: rect(114px, 9999px, 7px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(79px, 9999px, 54px, 0);
-            }
-
-            5% {
-                clip: rect(44px, 9999px, 124px, 0);
-            }
-
-            10% {
-                clip: rect(146px, 9999px, 98px, 0);
-            }
-
-            15% {
-                clip: rect(19px, 9999px, 38px, 0);
-            }
-
-            20% {
-                clip: rect(18px, 9999px, 97px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(118px, 9999px, 117px, 0);
-            }
-
-            5% {
-                clip: rect(1px, 9999px, 94px, 0);
-            }
-
-            10% {
-                clip: rect(106px, 9999px, 88px, 0);
-            }
-
-            15% {
-                clip: rect(52px, 9999px, 34px, 0);
-            }
-
-            20% {
-                clip: rect(120px, 9999px, 49px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(29px, 9999px, 16px, 0);
-            }
-
-            5% {
-                clip: rect(26px, 9999px, 90px, 0);
-            }
-
-            10% {
-                clip: rect(70px, 9999px, 34px, 0);
-            }
-
-            15% {
-                clip: rect(80px, 9999px, 4px, 0);
-            }
-
-            20% {
-                clip: rect(13px, 9999px, 20px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(117px, 9999px, 29px, 0);
-            }
-
-            5% {
-                clip: rect(9px, 9999px, 75px, 0);
-            }
-
-            10% {
-                clip: rect(41px, 9999px, 67px, 0);
-            }
-
-            15% {
-                clip: rect(33px, 9999px, 130px, 0);
-            }
-
-            20% {
-                clip: rect(73px, 9999px, 108px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(37px, 9999px, 96px, 0);
-            }
-
-            5% {
-                clip: rect(31px, 9999px, 45px, 0);
-            }
-
-            10% {
-                clip: rect(115px, 9999px, 74px, 0);
-            }
-
-            15% {
-                clip: rect(74px, 9999px, 123px, 0);
-            }
-
-            20% {
-                clip: rect(30px, 9999px, 132px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-        }
-
-        .glitch:after {
-            content: attr(data-text);
-            position: absolute;
-            left: 2px;
-            text-shadow: -1px 0 rgb(210, 120, 220);
-            top: 0;
-            color: #444f60 !important;
-            background: #f5f6fa;
-            overflow: hidden;
-            clip: rect(0, 900px, 0, 0);
-            animation: noise-anim 4s infinite linear alternate-reverse;
-        }
-
-        @keyframes noise-anim-2 {
-            0% {
-                clip: rect(96px, 9999px, 17px, 0);
-            }
-
-            5% {
-                clip: rect(100px, 9999px, 96px, 0);
-            }
-
-            10% {
-                clip: rect(46px, 9999px, 40px, 0);
-            }
-
-            15% {
-                clip: rect(69px, 9999px, 55px, 0);
-            }
-
-            20% {
-                clip: rect(8px, 9999px, 2px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(23px, 9999px, 8px, 0);
-            }
-
-            5% {
-                clip: rect(90px, 9999px, 19px, 0);
-            }
-
-            10% {
-                clip: rect(2px, 9999px, 3px, 0);
-            }
-
-            15% {
-                clip: rect(40px, 9999px, 18px, 0);
-            }
-
-            20% {
-                clip: rect(9px, 9999px, 35px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(17px, 9999px, 104px, 0);
-            }
-
-            5% {
-                clip: rect(58px, 9999px, 40px, 0);
-            }
-
-            10% {
-                clip: rect(21px, 9999px, 5px, 0);
-            }
-
-            15% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            20% {
-                clip: rect(71px, 9999px, 79px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(51px, 9999px, 58px, 0);
-            }
-
-            5% {
-                clip: rect(91px, 9999px, 54px, 0);
-            }
-
-            10% {
-                clip: rect(26px, 9999px, 26px, 0);
-            }
-
-            15% {
-                clip: rect(51px, 9999px, 40px, 0);
-            }
-
-            20% {
-                clip: rect(4px, 9999px, 27px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(30px, 9999px, 7px, 0);
-            }
-
-            5% {
-                clip: rect(100px, 9999px, 23px, 0);
-            }
-
-            10% {
-                clip: rect(70px, 9999px, 48px, 0);
-            }
-
-            15% {
-                clip: rect(107px, 9999px, 71px, 0);
-            }
-
-            20% {
-                clip: rect(30px, 9999px, 12px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(5px, 9999px, 21px, 0);
-            }
-
-            5% {
-                clip: rect(59px, 9999px, 53px, 0);
-            }
-
-            10% {
-                clip: rect(55px, 9999px, 7px, 0);
-            }
-
-            15% {
-                clip: rect(12px, 9999px, 21px, 0);
-            }
-
-            20% {
-                clip: rect(4px, 9999px, 14px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(36px, 9999px, 18px, 0);
-            }
-
-            5% {
-                clip: rect(58px, 9999px, 63px, 0);
-            }
-
-            10% {
-                clip: rect(1px, 9999px, 25px, 0);
-            }
-
-            15% {
-                clip: rect(22px, 9999px, 16px, 0);
-            }
-
-            20% {
-                clip: rect(50px, 9999px, 10px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(66px, 9999px, 13px, 0);
-            }
-
-            5% {
-                clip: rect(25px, 9999px, 53px, 0);
-            }
-
-            10% {
-                clip: rect(61px, 9999px, 21px, 0);
-            }
-
-            15% {
-                clip: rect(43px, 9999px, 100px, 0);
-            }
-
-            20% {
-                clip: rect(42px, 9999px, 36px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(21px, 9999px, 14px, 0);
-            }
-
-            5% {
-                clip: rect(23px, 9999px, 89px, 0);
-            }
-
-            10% {
-                clip: rect(16px, 9999px, 44px, 0);
-            }
-
-            15% {
-                clip: rect(42px, 9999px, 7px, 0);
-            }
-
-            20% {
-                clip: rect(31px, 9999px, 37px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(46px, 9999px, 7px, 0);
-            }
-
-            5% {
-                clip: rect(63px, 9999px, 1px, 0);
-            }
-
-            10% {
-                clip: rect(111px, 9999px, 63px, 0);
-            }
-
-            15% {
-                clip: rect(6px, 9999px, 60px, 0);
-            }
-
-            20% {
-                clip: rect(17px, 9999px, 1px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(16px, 9999px, 2px, 0);
-            }
-
-            5% {
-                clip: rect(57px, 9999px, 90px, 0);
-            }
-
-            10% {
-                clip: rect(2px, 9999px, 19px, 0);
-            }
-
-            15% {
-                clip: rect(23px, 9999px, 22px, 0);
-            }
-
-            20% {
-                clip: rect(6px, 9999px, 102px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(48px, 9999px, 5px, 0);
-            }
-
-            5% {
-                clip: rect(80px, 9999px, 87px, 0);
-            }
-
-            10% {
-                clip: rect(116px, 9999px, 21px, 0);
-            }
-
-            15% {
-                clip: rect(29px, 9999px, 47px, 0);
-            }
-
-            20% {
-                clip: rect(24px, 9999px, 31px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(3px, 9999px, 10px, 0);
-            }
-
-            5% {
-                clip: rect(33px, 9999px, 33px, 0);
-            }
-
-            10% {
-                clip: rect(3px, 9999px, 1px, 0);
-            }
-
-            15% {
-                clip: rect(20px, 9999px, 67px, 0);
-            }
-
-            20% {
-                clip: rect(85px, 9999px, 44px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(28px, 9999px, 137px, 0);
-            }
-
-            5% {
-                clip: rect(35px, 9999px, 72px, 0);
-            }
-
-            10% {
-                clip: rect(25px, 9999px, 13px, 0);
-            }
-
-            15% {
-                clip: rect(115px, 9999px, 11px, 0);
-            }
-
-            20% {
-                clip: rect(28px, 9999px, 9px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(51px, 9999px, 64px, 0);
-            }
-
-            5% {
-                clip: rect(48px, 9999px, 29px, 0);
-            }
-
-            10% {
-                clip: rect(41px, 9999px, 14px, 0);
-            }
-
-            15% {
-                clip: rect(30px, 9999px, 39px, 0);
-            }
-
-            20% {
-                clip: rect(9px, 9999px, 54px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(52px, 9999px, 74px, 0);
-            }
-
-            5% {
-                clip: rect(76px, 9999px, 97px, 0);
-            }
-
-            10% {
-                clip: rect(102px, 9999px, 37px, 0);
-            }
-
-            15% {
-                clip: rect(56px, 9999px, 49px, 0);
-            }
-
-            20% {
-                clip: rect(94px, 9999px, 87px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(20px, 9999px, 1px, 0);
-            }
-
-            5% {
-                clip: rect(67px, 9999px, 80px, 0);
-            }
-
-            10% {
-                clip: rect(21px, 9999px, 17px, 0);
-            }
-
-            15% {
-                clip: rect(4px, 9999px, 105px, 0);
-            }
-
-            20% {
-                clip: rect(36px, 9999px, 1px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(16px, 9999px, 67px, 0);
-            }
-
-            5% {
-                clip: rect(6px, 9999px, 65px, 0);
-            }
-
-            10% {
-                clip: rect(67px, 9999px, 51px, 0);
-            }
-
-            15% {
-                clip: rect(98px, 9999px, 17px, 0);
-            }
-
-            20% {
-                clip: rect(54px, 9999px, 46px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(36px, 9999px, 116px, 0);
-            }
-
-            5% {
-                clip: rect(30px, 9999px, 75px, 0);
-            }
-
-            10% {
-                clip: rect(62px, 9999px, 57px, 0);
-            }
-
-            15% {
-                clip: rect(61px, 9999px, 24px, 0);
-            }
-
-            20% {
-                clip: rect(11px, 9999px, 62px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(21px, 9999px, 4px, 0);
-            }
-
-            5% {
-                clip: rect(54px, 9999px, 51px, 0);
-            }
-
-            10% {
-                clip: rect(5px, 9999px, 31px, 0);
-            }
-
-            15% {
-                clip: rect(2px, 9999px, 45px, 0);
-            }
-
-            20% {
-                clip: rect(21px, 9999px, 3px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-
-            0% {
-                clip: rect(79px, 9999px, 45px, 0);
-            }
-
-            5% {
-                clip: rect(100px, 9999px, 62px, 0);
-            }
-
-            10% {
-                clip: rect(91px, 9999px, 43px, 0);
-            }
-
-            15% {
-                clip: rect(31px, 9999px, 82px, 0);
-            }
-
-            20% {
-                clip: rect(29px, 9999px, 15px, 0);
-            }
-
-            25% {
-                clip: rect(1px, 9999px, 1px, 0);
-            }
-        }
-
-        .glitch:before {
-            content: attr(data-text);
-            position: absolute;
-            left: -2px;
-            text-shadow: 1px 0 #8c8cf9;
-            top: 0;
-            color: #444f60 !important;
-            background: #f5f6fa;
-            overflow: hidden;
-            clip: rect(0, 900px, 0, 0);
-            animation: noise-anim-2 4s infinite linear alternate-reverse;
-        }
-    </style>
-
-    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
     <style>
         .svgAnimPanel {
             height: 50%;
@@ -8462,212 +7216,26 @@
 
 
     <div class="hero product-hero is-app-grey is-relative">
-
-        <style>
-            .testing {
-                display: inherit;
-                position: relative;
-            }
-
-            .testing:before,
-            .testing:after {
-                content: "PandoraID";
-                position: absolute;
-                top: 0;
-                left: 0;
-                padding: 8px 0;
-                width: 100%;
-                -webkit-clip: rect(0px, 0px, 0px, 0px);
-                clip: rect(0px, 0px, 0px, 0px);
-                background: rgba(255, 255, 255, 0.15);
-                color: rgb(255, 227, 227);
-            }
-
-            .testing:before {
-                left: -3px;
-                top: -2px;
-
-            }
-
-            .testing:after {
-                left: 2px;
-                bottom: -2px;
-
-            }
-
-            .testing:hover {
-                background-color: #8c8cf9;
-                color: rgb(255, 194, 194);
-            }
-
-            .testing:hover:before {
-                animation: glitch-test 1.5s infinite linear alternate-reverse;
-            }
-
-            .testing:hover:after {
-                -webkit-animation: glitch-test 2s infinite linear alternate;
-                animation: glitch-test 2s infinite linear alternate;
-            }
-
-            @-webkit-keyframes glitch-test {
-                0% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                5.88235% {
-                    clip: rect(0px, 600px, 0px, 0px);
-                }
-
-                11.76471% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                17.64706% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                23.52941% {
-                    clip: rect(100px, 600px, 100px, 0px);
-                }
-
-                29.41176% {
-                    clip: rect(0px, 600px, 600px, 0px);
-                }
-
-                35.29412% {
-                    clip: rect(100px, 600px, 0px, 0px);
-                }
-
-                41.17647% {
-                    clip: rect(0px, 600px, 600px, 0px);
-                }
-
-                47.05882% {
-                    clip: rect(100px, 600px, 0px, 0px);
-                }
-
-                52.94118% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                58.82353% {
-                    clip: rect(100px, 450px, 100px, 0px);
-                }
-
-                64.70588% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                70.58824% {
-                    clip: rect(100px, 450px, 100px, 0px);
-                }
-
-                76.47059% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                82.35294% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                88.23529% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                94.11765% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                100% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-            }
-
-            @keyframes glitch-test {
-                0% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                5.88235% {
-                    clip: rect(0px, 600px, 0px, 0px);
-                }
-
-                11.76471% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                17.64706% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                23.52941% {
-                    clip: rect(100px, 600px, 100px, 0px);
-                }
-
-                29.41176% {
-                    clip: rect(0px, 600px, 600px, 0px);
-                }
-
-                35.29412% {
-                    clip: rect(100px, 600px, 0px, 0px);
-                }
-
-                41.17647% {
-                    clip: rect(0px, 600px, 600px, 0px);
-                }
-
-                47.05882% {
-                    clip: rect(100px, 600px, 0px, 0px);
-                }
-
-                52.94118% {
-                    clip: rect(-3px, 600px, 0px, 0px);
-                }
-
-                58.82353% {
-                    clip: rect(100px, 450px, 100px, 0px);
-                }
-
-                64.70588% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                70.58824% {
-                    clip: rect(100px, 450px, 100px, 0px);
-                }
-
-                76.47059% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                82.35294% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                88.23529% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                94.11765% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-
-                100% {
-                    clip: rect(0px, 450px, 0px, 0px);
-                }
-            }
-        </style>
-
-
         <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent">
             <div class="container">
                 <!-- Brand -->
                 <div class="navbar-brand">
                     <a class="navbar-item" href="/">
-                        <img class="switcher-logo" src="assets/img/logos/logo/pandoraID5.svg" alt="">
+                        <img class="switcher-logo" src="assets/img/logos/logo/pandoraID2.svg" alt="">
                     </a>
 
-
+                    <!-- Sidebar Trigger -->
+                    <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
+                        <span class="menu-toggle">
+                          <span class="icon-box-toggle">
+                              <span class="rotate">
+                                  <i class="icon-line-top"></i>
+                                  <i class="icon-line-center"></i>
+                                  <i class="icon-line-bottom"></i>
+                              </span>
+                        </span>
+                        </span>
+                    </a>
 
                     <!-- Responsive toggle -->
                     <div class="custom-burger" data-target="">
@@ -8691,19 +7259,20 @@
                     <!-- Navbar Start -->
                     <div class="navbar-start">
                         <!-- Navbar item -->
-                        <a class="navbar-item is-slide" href="/docs.html">
-                            Docs
+                        <a class="navbar-item is-slide" href="#">
+                            Learn
                         </a>
                         <!-- Navbar item -->
-                        <a class="navbar-item is-slide" href="/pricing.html">
-                            Pricing
+                        <a class="navbar-item is-slide" href="#">
+                            Teach
                         </a>
                         <!-- Navbar item -->
-                        <a class="navbar-item is-slide" href="/dashboard.html">
-                            Dashboard
+                        <a class="navbar-item is-slide" href="#">
+                            Help
                         </a>
-                        <a class="navbar-item is-slide" href="/application.html">
-                            Application
+                        <!-- Navbar item -->
+                        <a class="navbar-item is-slide" href="#">
+                            Login
                         </a>
                     </div>
 
@@ -8711,7 +7280,7 @@
                     <div class="navbar-end">
                         <!-- Signup button -->
                         <div class="navbar-item is-button">
-                            <a id="#signup-btn" href="/signup.html" class="button button-cta is-bold btn-align primary-btn raised testing">
+                            <a id="#signup-btn" href="#" class="button button-cta is-bold is-rounded btn-align primary-btn raised">
                                 Register
                             </a>
                         </div>
@@ -8727,29 +7296,23 @@
                 <div class="columns is-vcentered">
                     <div class="column is-5 signup-column has-text-left">
                         <!--Update Pill-->
-                        <a href="/newupdate.html">
-                            <div class="update-pill">
-                                <span class="inner-tag">New Update</span>
+                        <div class="update-pill">
+                            <span class="inner-tag">New Update</span>
+                            <span class="inner-text">Check out the newest features</span>
+                        </div>
 
-                                <span class="inner-text">Check out the newest features</span>
-                            </div>
-                        </a>
-
-                        <h1 class="title main-title text-bold is-2">
-                            <div class="glitch" data-text="Your Identity Reimagined" style="margin: 0; width: fit-content;">Your Identity Reimagined</div>
-                        </h1>
+                        <h1 class="title main-title text-bold is-2">Learn Development.</h1>
                         <h2 class="subtitle is-5 no-margin-bottom body-color">
-                            Lifetime portable identity for any person, organization or thing that
-                            does not depend on any centralized authority and can never be taken away.
+                            Take control over your skills and abilities and start improving with
+                            a very fast learning curve.
                         </h2>
                         <br />
                         <!-- Signup form -->
-                        <div class="signup-block ">
+                        <div class="signup-block is-rounded">
                             <form>
                                 <div class="control">
-                                    <input type="email" class="input" placeholder="Your email address" id="email" />
-
-                                    <button id="send-email-button" type="submit" class="button btn-align primary-btn raised testing">
+                                    <input type="email" class="input" placeholder="Your email address" />
+                                    <button type="submit" class="button btn-align primary-btn raised">
                                         Sign up
                                     </button>
                                 </div>
@@ -8757,12 +7320,6 @@
                         </div>
                     </div>
                     <div class="column is-7">
-
-
-
-
-
-
 
                         <script type="text/javascript">
                             /** https://github.com/datalog/qrcode-svg under MIT license */
@@ -9558,10 +8115,8 @@
         <div class="container">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered">
-                <div class="bg-number"><i class="fa-solid fa-qrcode"></i></div>
-                <h1 class="section-title-landing">
-                    <div class="glitch" data-text="Awesome Features">Awesome Features</div>
-                </h1>
+                <div class="bg-number">1</div>
+                <h2 class="section-title-landing">Awesome Benefits</h2>
                 <h4>Learn a solid coding basis in less than 6 weeks</h4>
             </div>
 
@@ -9608,9 +8163,10 @@
 
 
                             </div>
-                            <div class="box-title" style="font-size: 20px;">Blockchain Based Identity</div>
+                            <div class="box-title">Practice HTML5</div>
                             <p class="box-content is-tablet-padded">
-                                The easiest way to integrate verifiable credentials into your data workflows. PandoraID Credentials are tamper-proof through the use of cryptography. Personal Data is not stored on centralised servers.
+                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
+                                hinc solet tincidunt, nec et iisque placerat pertinax.
                             </p>
                         </div>
                     </div>
@@ -9664,9 +8220,10 @@
 
 
                             </div>
-                            <div class="box-title" style="font-size: 20px;">One Identity For Everything</div>
+                            <div class="box-title">Learn Javascript</div>
                             <p class="box-content is-tablet-padded">
-                                A secure and digital peer-to-peer channel is established between ID Issuer, ID Owner and ID Verifier. When credentials are exchanged not even PandoraID system provider knows what is being exchanged.
+                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
+                                hinc solet tincidunt, nec et iisque placerat pertinax.
                             </p>
                         </div>
                     </div>
@@ -9719,11 +8276,10 @@
 
 
                             </div>
-                            <div class="box-title" style="font-size: 20px;">Scalable</div>
+                            <div class="box-title">Learn CSS</div>
                             <p class="box-content is-tablet-padded">
-                                PandoraID credentials is an identity metasystem that can be verified anywhere, at any time.
-                                Even if the issuer does not exist anymore.
-                                This allows to verify identity across multiple platforms and locations.
+                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
+                                hinc solet tincidunt, nec et iisque placerat pertinax.
                             </p>
                         </div>
                     </div>
@@ -9816,15 +8372,16 @@
 
 
                             </div>
-                            <div class="box-title" style="font-size: 20px;">Fast Response Time</div>
+                            <div class="box-title">Build Real Apps</div>
                             <p class="box-content is-tablet-padded">
-                                Rather than running on an individual machine Pandora functions run on Edge Network a growing global network of thousands of machines distributed across hundreds of locations.
+                                Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel
+                                hinc solet tincidunt, nec et iisque placerat pertinax.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="has-text-centered pt-40 pb-40">
-                    <a href="/Docs.html" class="button button-cta primary-btn  testing raised" style="display: inline-flex;">Learn more</a>
+                    <a href="#" class="button button-cta primary-btn rounded raised">Learn more</a>
                 </div>
             </div>
         </div>
@@ -9835,34 +8392,28 @@
         <div class="container">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered">
-                <div class="bg-number"> <i class="fa-solid fa-user-astronaut"></i></div>
-                <h2 class="section-title-landing">
-                    <div class="glitch" data-text="Manage your Progress">Manage your Progress</div>
-                </h2>
-                <h4>Great tool that will make your life easier</h4>
+                <div class="bg-number">2</div>
+                <h2 class="section-title-landing">Manage your Progress</h2>
+                <h4>Great tools that will make your life easier</h4>
             </div>
 
             <div class="content-wrapper">
                 <div class="columns is-vcentered pb-40 pt-40">
                     <div class="column is-4 is-offset-1">
                         <!-- Title -->
-                        
+                        <div class="icon-subtitle"><i class="im im-icon-Calendar-4"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <div>
-                                <div class="glitch" data-text="You Are In Control">You Are In Control</div>
-                            </div>
-                            <div class="bg-number"><i class="fa-solid fa-joystick"></i></div>
+                            <div>Synced Schedules</div>
+                            <div class="bg-number">+</div>
                         </div>
                         <div class="title-divider is-small"></div>
                         <span class="body-text"
-                >
-                Verifiable Credentials, in essence, 
-                allow for the digital watermarking of claims data through a combination of public key cryptography and 
-                privacy-preserving techniques to prevent correlation. 
-                Each user has full control and consent on what personal information he is sharing and with whom.</span>
+                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                periculis ut.</span>
                         <div class="pt-10 pb-10">
-                            <a href="/howssiareprivate.html" class="button btn-align btn-more is-link color-primary">
-                                Learn more <i class="fa-solid fa-angle-right"></i>
+                            <a href="#" class="button btn-align btn-more is-link color-primary">
+                                Learn more <i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -9941,8 +8492,10 @@
                                         stroke-width: 0.5px;
                                     }
 
-                                    </styl></defs><title>drawing-bw-2-core</title><circle class="cls-1 svg-elem-1"cx="211.6"cy="127.06"r="80.55"></circle><circle class="cls-1 svg-elem-2"cx="211.6"cy="127.06"r="74.68"></circle><circle class="cls-2 svg-elem-3"cx="211.6"cy="127.06"r="4.2"></circle><polyline class="cls-3 svg-elem-4"points="173.84 127.06 211.6 127.06 211.6 80.91"></polyline><path class="cls-4 svg-elem-5"d="M399,118.56a1.92,1.92,0,1,0-1.92,1.91A1.92,1.92,0,0,0,399,118.56Z"></path><rect class="cls-5 svg-elem-6"x="384.79"y="274.51"width="23.97"height="96.71"></rect><rect class="cls-5 svg-elem-7"x="245.52"y="114.98"width="302.52"height="183.49"></rect><rect class="cls-4 svg-elem-8"x="256.42"y="121.6"width="280.72"height="170.27"></rect><rect class="cls-4 svg-elem-9"x="256.42"y="281.61"width="280.72"height="10.25"></rect><polygon class="cls-5 svg-elem-10"points="397.5 363.82 308.63 369.56 308.63 375.35 483.75 375.35 483.75 369.56 397.5 363.82"></polygon><circle class="cls-4 svg-elem-11"cx="396.78"cy="206.73"r="56.67"></circle><rect class="cls-4 svg-elem-12"x="386.41"y="214.5"width="18.12"height="18.12"></rect><path class="cls-4 svg-elem-13"d="M377.51,190s-2.86-5.72-5.4-1.91,1.62,8.56,2.86,12.08,2.86,1.91,2.86,1.91Z"></path><path class="cls-4 svg-elem-14"d="M414.22,190s2.86-5.72,5.41-1.91-1.63,8.56-2.86,12.08-2.86,1.91-2.86,1.91Z"></path><path class="cls-4 svg-elem-15"d="M396.09,222.69h-.91a19,19,0,0,1-19-19V182.39c0-10.48,8.49-17.81,19-17.81h.91c10.48,0,19,7.33,19,17.81v21.33A19,19,0,0,1,396.09,222.69Z"></path><path class="cls-4 svg-elem-16"d="M398.11,189.67v8.79s2.11.2,1.34,2.11-2.87,3.63-6.5,1.14"></path><path class="cls-2 svg-elem-17"d="M387.05,191.45c0,2-.64,3.66-1.43,3.66s-1.43-1.64-1.43-3.66.64-3.66,1.43-3.66S387.05,189.43,387.05,191.45Z"></path><ellipse class="cls-2 svg-elem-18"cx="404.7"cy="191.45"rx="1.43"ry="3.66"></ellipse><path class="cls-4 svg-elem-19"d="M388.32,205s5.09,3.18,8.59,3.18,7.63-3.5,7.63-3.5"></path><path class="cls-4 svg-elem-20"d="M382.28,184.93s3.82-3.18,8.27-1"></path><path class="cls-4 svg-elem-21"d="M400.4,184.3s3.18-3.82,8.91.95"></path><path class="cls-5 svg-elem-22"d="M376.24,190.34s1.27-11.13,3.18-12.4,6-3.82,7-4.46a8.18,8.18,0,0,0,1.91-2.54s0-10.49-3.5-10.49-10.17,1.91-10.17,10.81C374.65,176.39,376.24,190.34,376.24,190.34Z"></path><path class="cls-5 svg-elem-23"d="M386.41,173.48s4.66-3.54,13.76.57,13.15,10.23,14.05,16,.91,20.41.91,20.41,10.56-4.7,11.74-21.42-3.53-30.22-19.08-34.91-24.64,6.16-24.64,6.16Z"></path><path class="cls-5 svg-elem-24"d="M437.34,246.28c-7.8-4.48-26.34-14.16-41.7-14.77-15.66-.62-32.67,10.12-39.36,14.84a56.62,56.62,0,0,0,81.06-.07Z"></path><path class="cls-4 svg-elem-25"d="M383.23,261.75a56.64,56.64,0,0,0,25.12.46V233.67a57.05,57.05,0,0,0-12.71-2.16,42.14,42.14,0,0,0-12.41,1.55Z"></path><rect class="cls-4 svg-elem-26"x="380.06"y="224.99"width="31.16"height="13.04"rx="1.86"></rect><line class="cls-3 svg-elem-27"x1="383.87"y1="225.31"x2="383.87"y2="234.21"></line><line class="cls-3 svg-elem-28"x1="386.73"y1="237.39"x2="386.73"y2="229.13"></line><line class="cls-3 svg-elem-29"x1="391.82"y1="224.99"x2="391.82"y2="232.94"></line><line class="cls-3 svg-elem-30"x1="401.04"y1="238.03"x2="401.04"y2="232.31"></line><path class="cls-2 svg-elem-31"d="M124.08,250.85c2.76,1.21,9.5,1.06,9.5,1.06s-1.45-4.42-1.57-4.68c-1.48-3.09-6.16-8.2-10-7.69a4.55,4.55,0,0,0-3.65,5.7C119,247.87,121.74,249.83,124.08,250.85Z"></path><path class="cls-2 svg-elem-32"d="M126.41,270.37c2.86.42,8.87-1.33,9.35-1.47A80,80,0,0,0,139.41,279c.82,1.92,1.72,3.82,2.63,5.72-.54-.8-1-1.52-1.12-1.61-2.24-2.59-8.1-6.28-11.63-4.78a4.54,4.54,0,0,0-2,6.45c1.31,2.38,4.43,3.55,7,3.92s7.72-1,9.08-1.39l1.08,2.17c1.74,3.47,3.49,6.92,5.11,10.36.57,1.21,1.08,2.42,1.61,3.64-.49-.72-.91-1.31-1-1.4-2.25-2.59-8.1-6.28-11.64-4.78a4.54,4.54,0,0,0-2,6.45c1.31,2.38,4.43,3.55,7,3.92s7.23-.88,8.85-1.32c.49,1.25,1,2.51,1.42,3.75.27.86.59,1.66.81,2.54s.48,1.71.71,2.55c.4,1.64.81,3.33,1.16,4.94.24,1.12.46,2.19.68,3.26-.55-1.21-1.69-3.56-1.8-3.75-1.83-2.9-7.06-7.43-10.78-6.49a4.54,4.54,0,0,0-3,6.08c.93,2.54,3.84,4.18,6.28,4.93,2.7.82,8.67.07,9.41,0,.36,1.78.69,3.52,1,5.17.64,3.63,1.12,6.88,1.49,9.63h2.51c-.43-2.85-1-6.24-1.77-10.05-.35-1.81-.77-3.74-1.22-5.72a49.36,49.36,0,0,0,5.25-2.47c2,2.13,7,4.62,7.66,4.93-.69,1.69-1.37,3.32-2,4.85-1.39,3.2-2.72,6.05-3.88,8.46h2.72c1-2.22,2.1-4.76,3.25-7.57.71-1.71,1.42-3.55,2.14-5.45.72.16,6.63,1.35,9.39.73,2.49-.56,5.52-2,6.64-4.44a4.55,4.55,0,0,0-2.51-6.28c-3.64-1.22-9.19,2.91-11.23,5.67-.12.16-1.23,2.07-1.9,3.29.29-.78.58-1.53.86-2.33.59-1.58,1.12-3.18,1.7-4.9l.76-2.54c.27-.84.45-1.76.68-2.66.5-2.07.9-4.2,1.25-6.36,1.39.51,6.34,2.23,8.91,2.05s5.76-1.12,7.23-3.39a4.53,4.53,0,0,0-1.52-6.58c-3.41-1.76-9.53,1.48-12,3.9-.15.15-1.7,2.08-2.53,3.16.2-1.3.41-2.59.58-3.91.47-3.81.83-7.67,1.21-11.53.11-1.18.24-2.36.36-3.54.49.19,6.34,2.36,9.21,2.16,2.55-.18,5.76-1.12,7.24-3.39a4.54,4.54,0,0,0-1.53-6.58c-3.41-1.76-9.53,1.48-12,3.9-.18.18-2.4,3-2.94,3.7.28-2.59.58-5.18,1-7.71a81.31,81.31,0,0,1,2.21-10.14c.23.09,6.32,2.39,9.26,2.18,2.56-.18,5.76-1.12,7.24-3.39a4.54,4.54,0,0,0-1.53-6.58c-3.41-1.76-9.52,1.48-11.95,3.9-.19.19-2.59,3.18-3,3.76.06-.19.09-.4.15-.59a59.08,59.08,0,0,1,4-9.6c.87-1.7,1.8-3.29,2.74-4.81,1.09.55,6.1,3,8.77,3.08s5.84-.47,7.56-2.57a4.54,4.54,0,0,0-.79-6.71c-3.2-2.13-9.63.43-12.31,2.56-.15.12-1.5,1.46-2.47,2.46.43-.68.87-1.39,1.3-2,1.6-2.42,3.22-4.54,4.67-6.4.84-1.05,1.61-2,2.34-2.85,1.35,0,6.78-.19,9.16-1.31s5-3.12,5.53-5.77a4.55,4.55,0,0,0-3.8-5.59c-3.82-.41-8.35,4.82-9.75,8-.12.27-1.52,4.72-1.45,4.72h.08c-.72.82-1.48,1.71-2.3,2.69-1.49,1.84-3.16,3.92-4.83,6.32a79.57,79.57,0,0,0-5,8,58.8,58.8,0,0,0-4.28,9.63l0,.12c0-1.13,0-4.27-.06-4.51-.45-3.4-3.29-9.71-7.07-10.41a4.55,4.55,0,0,0-5.24,4.27c-.22,2.7,1.74,5.41,3.65,7.11,2.15,1.92,8.13,3.79,8.6,3.93a82.27,82.27,0,0,0-2.52,10.43c-.37,2.06-.67,4.14-1,6.23,0-1,0-1.85,0-2-.44-3.4-3.29-9.71-7.07-10.41a4.55,4.55,0,0,0-5.24,4.28c-.22,2.7,1.74,5.4,3.65,7.11s7,3.42,8.35,3.85c-.1.8-.21,1.6-.3,2.4-.46,3.86-.91,7.7-1.46,11.46-.19,1.33-.43,2.62-.66,3.92,0-.86,0-1.59,0-1.7-.44-3.4-3.29-9.71-7.06-10.41a4.54,4.54,0,0,0-5.24,4.28c-.23,2.7,1.73,5.4,3.64,7.11s6.51,3.25,8.11,3.77c-.28,1.32-.56,2.65-.89,3.92-.25.86-.42,1.71-.72,2.56l-.81,2.52c-.58,1.59-1.16,3.23-1.77,4.76-.41,1.07-.82,2.08-1.23,3.1.21-1.32.56-3.91.57-4.13a17.71,17.71,0,0,0-2.37-8.58,5.6,5.6,0,0,0-.06-1,4.54,4.54,0,0,0-5.56-3.85c-3.7,1-6.06,7.49-6.23,10.92,0,.2.12,2.4.23,3.79-.19-.8-.36-1.59-.57-2.42-.38-1.64-.82-3.26-1.28-5-.26-.83-.51-1.68-.77-2.53s-.6-1.73-.9-2.6c-.73-2-1.57-4-2.47-6,1.44-.34,6.52-1.63,8.56-3.2s4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.41-7.13,6.49-7.82,9.85,0,.21-.27,2.68-.37,4-.54-1.19-1.08-2.39-1.67-3.58-1.71-3.43-3.54-6.86-5.35-10.28-.56-1.05-1.1-2.1-1.65-3.15.51-.12,6.59-1.53,8.87-3.28,2-1.56,4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.42-7.13,6.5-7.82,9.85,0,.26-.37,3.8-.41,4.71-1.2-2.31-2.38-4.63-3.44-7a79.69,79.69,0,0,1-3.75-9.68c.24-.05,6.58-1.5,8.92-3.29,2-1.56,4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.41-7.12,6.49-7.82,9.85-.05.26-.39,4.08-.41,4.78-.06-.2-.14-.39-.19-.58a58.63,58.63,0,0,1-1.95-10.22c-.21-1.9-.31-3.74-.36-5.52,1.21-.15,6.72-.89,9-2.27s4.61-3.62,4.89-6.32a4.55,4.55,0,0,0-4.37-5.16c-3.83,0-7.79,5.67-8.85,8.93-.06.18-.44,2.05-.7,3.41,0-.81-.05-1.64,0-2.41,0-2.9.19-5.56.37-7.91.11-1.34.24-2.55.38-3.68,1.11-.76,5.55-3.89,6.91-6.13s2.42-5.34,1.43-7.86a4.54,4.54,0,0,0-6.25-2.57c-3.41,1.76-4.31,8.62-3.75,12,.05.3,1.34,4.78,1.4,4.74l.06-.05c-.15,1.09-.29,2.25-.43,3.52-.23,2.36-.48,5-.54,7.93a79.78,79.78,0,0,0,.22,9.41,59.8,59.8,0,0,0,1.74,10.39.56.56,0,0,1,0,.12c-.6-.95-2.38-3.54-2.54-3.73-2.24-2.59-8.1-6.28-11.63-4.78a4.53,4.53,0,0,0-2,6.45C120.75,268.83,123.88,270,126.41,270.37Z"></path><path class="cls-2 svg-elem-33"d="M192.24,252.34c.06,0,1.22-4.48,1.26-4.77.47-3.4-.61-10.24-4.06-11.91a4.54,4.54,0,0,0-6.18,2.74c-.93,2.55.24,5.67,1.63,7.82C186.53,248.74,192.23,252.33,192.24,252.34Z"></path><polygon class="cls-4 svg-elem-34"points="183.51 375.35 146.68 375.35 142.08 334.45 188.11 334.45 183.51 375.35"></polygon><polygon class="cls-2 svg-elem-35"points="142.92 341.94 143.37 345.9 186.82 345.9 187.27 341.94 142.92 341.94"></polygon><polygon class="cls-2 svg-elem-36"points="185.84 354.62 186.29 350.66 143.9 350.66 144.35 354.62 185.84 354.62"></polygon><rect class="cls-5 svg-elem-37"x="518.4"y="206.57"width="69.56"height="49.39"rx="5.1"></rect><rect class="cls-4 svg-elem-38"x="521.41"y="203.13"width="69.56"height="49.39"rx="5.1"></rect><polygon class="cls-4 svg-elem-39"points="572.51 227.12 545.42 211.48 545.42 242.76 572.51 227.12"></polygon><rect class="cls-5 svg-elem-40"x="486.75"y="114.98"width="61.28"height="40.67"></rect><rect class="cls-4 svg-elem-41"x="490.84"y="88.93"width="81.39"height="64"></rect><rect class="cls-5 svg-elem-42"x="502.39"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-5 svg-elem-43"x="528.85"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-5 svg-elem-44"x="555.31"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-4 svg-elem-45"x="497.18"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-46"x="509.57"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-47"x="521.95"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-48"x="534.34"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-49"x="546.73"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-50"x="559.12"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-51"x="497.18"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-52"x="509.57"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-53"x="521.95"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-54"x="534.34"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-55"x="546.73"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-56"x="559.12"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-57"x="497.18"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-58"x="509.57"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-59"x="521.95"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-60"x="534.34"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-61"x="546.73"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-62"x="559.12"y="135.51"width="8.14"height="8.14"></rect><path class="cls-6 svg-elem-63"d="M325.3,99.3H271.18a3.63,3.63,0,0,0-3.63,3.63v34.34a3.64,3.64,0,0,0,3.63,3.63H275L283.29,152l1-11.09h41a3.63,3.63,0,0,0,3.63-3.63V102.93A3.62,3.62,0,0,0,325.3,99.3Z"></path><line class="cls-7 svg-elem-64"x1="277.79"y1="110.48"x2="319.73"y2="110.48"></line><line class="cls-7 svg-elem-65"x1="277.79"y1="119.38"x2="319.73"y2="119.38"></line><line class="cls-7 svg-elem-66"x1="277.79"y1="128.27"x2="319.73"y2="128.27"></line><path class="cls-4 svg-elem-67"d="M554.72,364.62c-4.24,0-8.48-2.71-10.74-4.83a2.24,2.24,0,1,1,3.06-3.28c.06.06,6.85,6.26,10.83,2.29,3.44-3.45,7-10.35,6.94-16.33a9.72,9.72,0,0,0-3-7.22c-1.8-1.67-3.53-2.41-5.15-2.2-2.82.36-4.79,3.4-4.81,3.43a2.24,2.24,0,0,1-3.8-2.39c.12-.19,3.07-4.84,8-5.49,3-.4,6,.73,8.82,3.36a14.24,14.24,0,0,1,4.41,10.43c.13,7.3-4,15.38-8.26,19.58A8.66,8.66,0,0,1,554.72,364.62Z"></path><path class="cls-5 svg-elem-68"d="M552.6,359.8a16.75,16.75,0,0,1-5.56-3.29,2.24,2.24,0,1,0-3.06,3.28,19.06,19.06,0,0,0,8.28,4.55Z"></path><path class="cls-5 svg-elem-69"d="M548.07,334.09a2.24,2.24,0,0,0,3.8,2.39,9.57,9.57,0,0,1,2.68-2.63l.37-5A13,13,0,0,0,548.07,334.09Z"></path><polygon class="cls-4 svg-elem-70"points="549.63 375.35 519.9 375.35 516.18 325.8 553.35 325.8 549.63 375.35"></polygon><ellipse class="cls-6 svg-elem-71"cx="530.52"cy="347.51"rx="8.08"ry="14.49"></ellipse><path class="cls-3 svg-elem-72"d="M513.11,277.4a28.45,28.45,0,0,1,1.71-4.6"></path><path class="cls-3 svg-elem-73"d="M522.08,321.34s8.36-8.37-.56-18.41c-6.69-7.52-9.93-14.73-9-22.33"></path><path class="cls-3 svg-elem-74"d="M539.5,307.79a16.49,16.49,0,0,0-1.8-4.31"></path><path class="cls-3 svg-elem-75"d="M538.25,321.34a22.9,22.9,0,0,0,1.8-10"></path><path class="cls-6 svg-elem-76"d="M439.06,88.79a19.85,19.85,0,0,0-26.13-28.35,23.52,23.52,0,0,0,.24-3.27,22.7,22.7,0,0,0-44.87-4.85h-.53a22.69,22.69,0,0,0-18,36.48Z"></path><line class="cls-3 svg-elem-77"x1="373.45"y1="105.81"x2="373.45"y2="78.94"></line><polygon class="cls-2 svg-elem-78"points="378.43 80.4 373.45 71.76 368.46 80.4 378.43 80.4"></polygon><line class="cls-3 svg-elem-79"x1="405.87"y1="73.39"x2="405.87"y2="95.39"></line><polygon class="cls-2 svg-elem-80"points="400.88 93.93 405.87 102.57 410.86 93.93 400.88 93.93"></polygon><rect class="cls-5 svg-elem-81"x="218.91"y="244.34"width="71.91"height="131.01"rx="4.12"></rect><rect class="cls-4 svg-elem-82"x="216.99"y="244.34"width="71.91"height="131.01"rx="4.12"></rect><rect class="cls-6 svg-elem-83"x="224.6"y="256.18"width="56.68"height="105.63"></rect><circle class="cls-8 svg-elem-84"cx="252.94"cy="291.25"r="23.26"></circle><rect class="cls-8 svg-elem-85"x="248.69"y="294.44"width="7.44"height="7.44"></rect><path class="cls-8 svg-elem-86"d="M245,284.39s-1.17-2.35-2.22-.78.67,3.51,1.18,5,1.17.78,1.17.78Z"></path><path class="cls-8 svg-elem-87"d="M260.1,284.39s1.18-2.35,2.22-.78-.67,3.51-1.17,5-1.18.78-1.18.78Z"></path><path class="cls-8 svg-elem-88"d="M252.66,297.8h-.38A7.78,7.78,0,0,1,244.5,290v-8.75c0-4.31,3.48-7.31,7.78-7.31h.38c4.3,0,7.79,3,7.79,7.31V290A7.79,7.79,0,0,1,252.66,297.8Z"></path><path class="cls-8 svg-elem-89"d="M253.49,284.25v3.61s.86.07.55.86-1.18,1.49-2.67.47"></path><path class="cls-2 svg-elem-90"d="M249,285c0,.82-.27,1.5-.59,1.5s-.59-.68-.59-1.5.27-1.51.59-1.51S249,284.15,249,285Z"></path><path class="cls-2 svg-elem-91"d="M256.78,285c0,.82-.26,1.5-.59,1.5s-.59-.68-.59-1.5.27-1.51.59-1.51S256.78,284.15,256.78,285Z"></path><path class="cls-8 svg-elem-92"d="M249.47,290.52a8.86,8.86,0,0,0,3.52,1.31,6.22,6.22,0,0,0,3.14-1.44"></path><path class="cls-8 svg-elem-93"d="M247,282.3a3.25,3.25,0,0,1,3.39-.39"></path><path class="cls-8 svg-elem-94"d="M254.43,282s1.3-1.57,3.65.39"></path><path class="cls-9 svg-elem-95"d="M244.51,284.52s.52-4.57,1.31-5.09,2.48-1.57,2.87-1.83a3.41,3.41,0,0,0,.78-1s0-4.31-1.44-4.31a4.05,4.05,0,0,0-4.17,4.44C243.86,278.79,244.51,284.52,244.51,284.52Z"></path><path class="cls-9 svg-elem-96"d="M248.69,277.6s1.91-1.45,5.64.23,5.4,4.2,5.77,6.56.37,8.38.37,8.38,4.34-1.93,4.82-8.8-1.44-12.4-7.83-14.33a9.69,9.69,0,0,0-10.11,2.53Z"></path><path class="cls-9 svg-elem-97"d="M269.59,307.48c-3.2-1.83-10.81-5.81-17.12-6.06s-13.41,4.16-16.15,6.09a23.23,23.23,0,0,0,33.27,0Z"></path><path class="cls-8 svg-elem-98"d="M247.38,313.84a23.64,23.64,0,0,0,5.56.67,23.19,23.19,0,0,0,4.75-.49V302.31a23.3,23.3,0,0,0-5.22-.89,17.06,17.06,0,0,0-5.09.64Z"></path><rect class="cls-8 svg-elem-99"x="246.08"y="298.75"width="12.79"height="5.35"rx="1.86"></rect><line class="cls-10 svg-elem-100"x1="247.64"y1="298.88"x2="247.64"y2="302.53"></line><line class="cls-10 svg-elem-101"x1="248.82"y1="303.84"x2="248.82"y2="300.44"></line><line class="cls-10 svg-elem-102"x1="250.91"y1="298.75"x2="250.91"y2="302.01"></line><line class="cls-10 svg-elem-103"x1="254.69"y1="304.1"x2="254.69"y2="301.75"></line><line class="cls-1 svg-elem-104"x1="64.65"y1="375.35"x2="596.63"y2="375.35"></line><line class="cls-1 svg-elem-105"x1="37.03"y1="375.35"x2="51.35"y2="375.35"></line><polygon class="cls-4 svg-elem-106"points="282.56 199.37 282.56 209.36 295.13 216.62 295.13 192.11 282.56 199.37"></polygon><rect class="cls-4 svg-elem-107"x="276.61"y="199.37"width="5.95"height="9.92"></rect></svg></div></div><div class="columns is-vcentered pb-40 pt-40"><div class="column is-4 is-offset-1 is-hidden-tablet is-hidden-desktop"><div class="title quick-feature has-numbers text-bold"><h2><div class="glitch"data-text="User centric">User centric</div></h2><div class="bg-number"><i class="fa-brands fa-android"></i></div></div><div class="title-divider is-small"></div><span class="body-text"
-                                    >Storing sensitive personal data increases your data management costs and the risk of infringing privacy regulations. PandoraID allows you to verify and authenticate any user data without having to store it on your systems.</span><div class="pt-10 pb-10"><a href="#"class="button btn-align btn-more is-link color-primary">Learn more <i class="fa-solid fa-angle-right"></i></a></div></div><div class="column is-6"><style>
+                                    </styl></defs><title>drawing-bw-2-core</title><circle class="cls-1 svg-elem-1"cx="211.6"cy="127.06"r="80.55"></circle><circle class="cls-1 svg-elem-2"cx="211.6"cy="127.06"r="74.68"></circle><circle class="cls-2 svg-elem-3"cx="211.6"cy="127.06"r="4.2"></circle><polyline class="cls-3 svg-elem-4"points="173.84 127.06 211.6 127.06 211.6 80.91"></polyline><path class="cls-4 svg-elem-5"d="M399,118.56a1.92,1.92,0,1,0-1.92,1.91A1.92,1.92,0,0,0,399,118.56Z"></path><rect class="cls-5 svg-elem-6"x="384.79"y="274.51"width="23.97"height="96.71"></rect><rect class="cls-5 svg-elem-7"x="245.52"y="114.98"width="302.52"height="183.49"></rect><rect class="cls-4 svg-elem-8"x="256.42"y="121.6"width="280.72"height="170.27"></rect><rect class="cls-4 svg-elem-9"x="256.42"y="281.61"width="280.72"height="10.25"></rect><polygon class="cls-5 svg-elem-10"points="397.5 363.82 308.63 369.56 308.63 375.35 483.75 375.35 483.75 369.56 397.5 363.82"></polygon><circle class="cls-4 svg-elem-11"cx="396.78"cy="206.73"r="56.67"></circle><rect class="cls-4 svg-elem-12"x="386.41"y="214.5"width="18.12"height="18.12"></rect><path class="cls-4 svg-elem-13"d="M377.51,190s-2.86-5.72-5.4-1.91,1.62,8.56,2.86,12.08,2.86,1.91,2.86,1.91Z"></path><path class="cls-4 svg-elem-14"d="M414.22,190s2.86-5.72,5.41-1.91-1.63,8.56-2.86,12.08-2.86,1.91-2.86,1.91Z"></path><path class="cls-4 svg-elem-15"d="M396.09,222.69h-.91a19,19,0,0,1-19-19V182.39c0-10.48,8.49-17.81,19-17.81h.91c10.48,0,19,7.33,19,17.81v21.33A19,19,0,0,1,396.09,222.69Z"></path><path class="cls-4 svg-elem-16"d="M398.11,189.67v8.79s2.11.2,1.34,2.11-2.87,3.63-6.5,1.14"></path><path class="cls-2 svg-elem-17"d="M387.05,191.45c0,2-.64,3.66-1.43,3.66s-1.43-1.64-1.43-3.66.64-3.66,1.43-3.66S387.05,189.43,387.05,191.45Z"></path><ellipse class="cls-2 svg-elem-18"cx="404.7"cy="191.45"rx="1.43"ry="3.66"></ellipse><path class="cls-4 svg-elem-19"d="M388.32,205s5.09,3.18,8.59,3.18,7.63-3.5,7.63-3.5"></path><path class="cls-4 svg-elem-20"d="M382.28,184.93s3.82-3.18,8.27-1"></path><path class="cls-4 svg-elem-21"d="M400.4,184.3s3.18-3.82,8.91.95"></path><path class="cls-5 svg-elem-22"d="M376.24,190.34s1.27-11.13,3.18-12.4,6-3.82,7-4.46a8.18,8.18,0,0,0,1.91-2.54s0-10.49-3.5-10.49-10.17,1.91-10.17,10.81C374.65,176.39,376.24,190.34,376.24,190.34Z"></path><path class="cls-5 svg-elem-23"d="M386.41,173.48s4.66-3.54,13.76.57,13.15,10.23,14.05,16,.91,20.41.91,20.41,10.56-4.7,11.74-21.42-3.53-30.22-19.08-34.91-24.64,6.16-24.64,6.16Z"></path><path class="cls-5 svg-elem-24"d="M437.34,246.28c-7.8-4.48-26.34-14.16-41.7-14.77-15.66-.62-32.67,10.12-39.36,14.84a56.62,56.62,0,0,0,81.06-.07Z"></path><path class="cls-4 svg-elem-25"d="M383.23,261.75a56.64,56.64,0,0,0,25.12.46V233.67a57.05,57.05,0,0,0-12.71-2.16,42.14,42.14,0,0,0-12.41,1.55Z"></path><rect class="cls-4 svg-elem-26"x="380.06"y="224.99"width="31.16"height="13.04"rx="1.86"></rect><line class="cls-3 svg-elem-27"x1="383.87"y1="225.31"x2="383.87"y2="234.21"></line><line class="cls-3 svg-elem-28"x1="386.73"y1="237.39"x2="386.73"y2="229.13"></line><line class="cls-3 svg-elem-29"x1="391.82"y1="224.99"x2="391.82"y2="232.94"></line><line class="cls-3 svg-elem-30"x1="401.04"y1="238.03"x2="401.04"y2="232.31"></line><path class="cls-2 svg-elem-31"d="M124.08,250.85c2.76,1.21,9.5,1.06,9.5,1.06s-1.45-4.42-1.57-4.68c-1.48-3.09-6.16-8.2-10-7.69a4.55,4.55,0,0,0-3.65,5.7C119,247.87,121.74,249.83,124.08,250.85Z"></path><path class="cls-2 svg-elem-32"d="M126.41,270.37c2.86.42,8.87-1.33,9.35-1.47A80,80,0,0,0,139.41,279c.82,1.92,1.72,3.82,2.63,5.72-.54-.8-1-1.52-1.12-1.61-2.24-2.59-8.1-6.28-11.63-4.78a4.54,4.54,0,0,0-2,6.45c1.31,2.38,4.43,3.55,7,3.92s7.72-1,9.08-1.39l1.08,2.17c1.74,3.47,3.49,6.92,5.11,10.36.57,1.21,1.08,2.42,1.61,3.64-.49-.72-.91-1.31-1-1.4-2.25-2.59-8.1-6.28-11.64-4.78a4.54,4.54,0,0,0-2,6.45c1.31,2.38,4.43,3.55,7,3.92s7.23-.88,8.85-1.32c.49,1.25,1,2.51,1.42,3.75.27.86.59,1.66.81,2.54s.48,1.71.71,2.55c.4,1.64.81,3.33,1.16,4.94.24,1.12.46,2.19.68,3.26-.55-1.21-1.69-3.56-1.8-3.75-1.83-2.9-7.06-7.43-10.78-6.49a4.54,4.54,0,0,0-3,6.08c.93,2.54,3.84,4.18,6.28,4.93,2.7.82,8.67.07,9.41,0,.36,1.78.69,3.52,1,5.17.64,3.63,1.12,6.88,1.49,9.63h2.51c-.43-2.85-1-6.24-1.77-10.05-.35-1.81-.77-3.74-1.22-5.72a49.36,49.36,0,0,0,5.25-2.47c2,2.13,7,4.62,7.66,4.93-.69,1.69-1.37,3.32-2,4.85-1.39,3.2-2.72,6.05-3.88,8.46h2.72c1-2.22,2.1-4.76,3.25-7.57.71-1.71,1.42-3.55,2.14-5.45.72.16,6.63,1.35,9.39.73,2.49-.56,5.52-2,6.64-4.44a4.55,4.55,0,0,0-2.51-6.28c-3.64-1.22-9.19,2.91-11.23,5.67-.12.16-1.23,2.07-1.9,3.29.29-.78.58-1.53.86-2.33.59-1.58,1.12-3.18,1.7-4.9l.76-2.54c.27-.84.45-1.76.68-2.66.5-2.07.9-4.2,1.25-6.36,1.39.51,6.34,2.23,8.91,2.05s5.76-1.12,7.23-3.39a4.53,4.53,0,0,0-1.52-6.58c-3.41-1.76-9.53,1.48-12,3.9-.15.15-1.7,2.08-2.53,3.16.2-1.3.41-2.59.58-3.91.47-3.81.83-7.67,1.21-11.53.11-1.18.24-2.36.36-3.54.49.19,6.34,2.36,9.21,2.16,2.55-.18,5.76-1.12,7.24-3.39a4.54,4.54,0,0,0-1.53-6.58c-3.41-1.76-9.53,1.48-12,3.9-.18.18-2.4,3-2.94,3.7.28-2.59.58-5.18,1-7.71a81.31,81.31,0,0,1,2.21-10.14c.23.09,6.32,2.39,9.26,2.18,2.56-.18,5.76-1.12,7.24-3.39a4.54,4.54,0,0,0-1.53-6.58c-3.41-1.76-9.52,1.48-11.95,3.9-.19.19-2.59,3.18-3,3.76.06-.19.09-.4.15-.59a59.08,59.08,0,0,1,4-9.6c.87-1.7,1.8-3.29,2.74-4.81,1.09.55,6.1,3,8.77,3.08s5.84-.47,7.56-2.57a4.54,4.54,0,0,0-.79-6.71c-3.2-2.13-9.63.43-12.31,2.56-.15.12-1.5,1.46-2.47,2.46.43-.68.87-1.39,1.3-2,1.6-2.42,3.22-4.54,4.67-6.4.84-1.05,1.61-2,2.34-2.85,1.35,0,6.78-.19,9.16-1.31s5-3.12,5.53-5.77a4.55,4.55,0,0,0-3.8-5.59c-3.82-.41-8.35,4.82-9.75,8-.12.27-1.52,4.72-1.45,4.72h.08c-.72.82-1.48,1.71-2.3,2.69-1.49,1.84-3.16,3.92-4.83,6.32a79.57,79.57,0,0,0-5,8,58.8,58.8,0,0,0-4.28,9.63l0,.12c0-1.13,0-4.27-.06-4.51-.45-3.4-3.29-9.71-7.07-10.41a4.55,4.55,0,0,0-5.24,4.27c-.22,2.7,1.74,5.41,3.65,7.11,2.15,1.92,8.13,3.79,8.6,3.93a82.27,82.27,0,0,0-2.52,10.43c-.37,2.06-.67,4.14-1,6.23,0-1,0-1.85,0-2-.44-3.4-3.29-9.71-7.07-10.41a4.55,4.55,0,0,0-5.24,4.28c-.22,2.7,1.74,5.4,3.65,7.11s7,3.42,8.35,3.85c-.1.8-.21,1.6-.3,2.4-.46,3.86-.91,7.7-1.46,11.46-.19,1.33-.43,2.62-.66,3.92,0-.86,0-1.59,0-1.7-.44-3.4-3.29-9.71-7.06-10.41a4.54,4.54,0,0,0-5.24,4.28c-.23,2.7,1.73,5.4,3.64,7.11s6.51,3.25,8.11,3.77c-.28,1.32-.56,2.65-.89,3.92-.25.86-.42,1.71-.72,2.56l-.81,2.52c-.58,1.59-1.16,3.23-1.77,4.76-.41,1.07-.82,2.08-1.23,3.1.21-1.32.56-3.91.57-4.13a17.71,17.71,0,0,0-2.37-8.58,5.6,5.6,0,0,0-.06-1,4.54,4.54,0,0,0-5.56-3.85c-3.7,1-6.06,7.49-6.23,10.92,0,.2.12,2.4.23,3.79-.19-.8-.36-1.59-.57-2.42-.38-1.64-.82-3.26-1.28-5-.26-.83-.51-1.68-.77-2.53s-.6-1.73-.9-2.6c-.73-2-1.57-4-2.47-6,1.44-.34,6.52-1.63,8.56-3.2s4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.41-7.13,6.49-7.82,9.85,0,.21-.27,2.68-.37,4-.54-1.19-1.08-2.39-1.67-3.58-1.71-3.43-3.54-6.86-5.35-10.28-.56-1.05-1.1-2.1-1.65-3.15.51-.12,6.59-1.53,8.87-3.28,2-1.56,4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.42-7.13,6.5-7.82,9.85,0,.26-.37,3.8-.41,4.71-1.2-2.31-2.38-4.63-3.44-7a79.69,79.69,0,0,1-3.75-9.68c.24-.05,6.58-1.5,8.92-3.29,2-1.56,4.19-4.11,4.17-6.82a4.55,4.55,0,0,0-4.91-4.65c-3.81.41-7.12,6.49-7.82,9.85-.05.26-.39,4.08-.41,4.78-.06-.2-.14-.39-.19-.58a58.63,58.63,0,0,1-1.95-10.22c-.21-1.9-.31-3.74-.36-5.52,1.21-.15,6.72-.89,9-2.27s4.61-3.62,4.89-6.32a4.55,4.55,0,0,0-4.37-5.16c-3.83,0-7.79,5.67-8.85,8.93-.06.18-.44,2.05-.7,3.41,0-.81-.05-1.64,0-2.41,0-2.9.19-5.56.37-7.91.11-1.34.24-2.55.38-3.68,1.11-.76,5.55-3.89,6.91-6.13s2.42-5.34,1.43-7.86a4.54,4.54,0,0,0-6.25-2.57c-3.41,1.76-4.31,8.62-3.75,12,.05.3,1.34,4.78,1.4,4.74l.06-.05c-.15,1.09-.29,2.25-.43,3.52-.23,2.36-.48,5-.54,7.93a79.78,79.78,0,0,0,.22,9.41,59.8,59.8,0,0,0,1.74,10.39.56.56,0,0,1,0,.12c-.6-.95-2.38-3.54-2.54-3.73-2.24-2.59-8.1-6.28-11.63-4.78a4.53,4.53,0,0,0-2,6.45C120.75,268.83,123.88,270,126.41,270.37Z"></path><path class="cls-2 svg-elem-33"d="M192.24,252.34c.06,0,1.22-4.48,1.26-4.77.47-3.4-.61-10.24-4.06-11.91a4.54,4.54,0,0,0-6.18,2.74c-.93,2.55.24,5.67,1.63,7.82C186.53,248.74,192.23,252.33,192.24,252.34Z"></path><polygon class="cls-4 svg-elem-34"points="183.51 375.35 146.68 375.35 142.08 334.45 188.11 334.45 183.51 375.35"></polygon><polygon class="cls-2 svg-elem-35"points="142.92 341.94 143.37 345.9 186.82 345.9 187.27 341.94 142.92 341.94"></polygon><polygon class="cls-2 svg-elem-36"points="185.84 354.62 186.29 350.66 143.9 350.66 144.35 354.62 185.84 354.62"></polygon><rect class="cls-5 svg-elem-37"x="518.4"y="206.57"width="69.56"height="49.39"rx="5.1"></rect><rect class="cls-4 svg-elem-38"x="521.41"y="203.13"width="69.56"height="49.39"rx="5.1"></rect><polygon class="cls-4 svg-elem-39"points="572.51 227.12 545.42 211.48 545.42 242.76 572.51 227.12"></polygon><rect class="cls-5 svg-elem-40"x="486.75"y="114.98"width="61.28"height="40.67"></rect><rect class="cls-4 svg-elem-41"x="490.84"y="88.93"width="81.39"height="64"></rect><rect class="cls-5 svg-elem-42"x="502.39"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-5 svg-elem-43"x="528.85"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-5 svg-elem-44"x="555.31"y="79.52"width="6.66"height="17.42"></rect><rect class="cls-4 svg-elem-45"x="497.18"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-46"x="509.57"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-47"x="521.95"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-48"x="534.34"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-49"x="546.73"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-50"x="559.12"y="111.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-51"x="497.18"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-52"x="509.57"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-53"x="521.95"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-54"x="534.34"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-55"x="546.73"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-56"x="559.12"y="123.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-57"x="497.18"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-58"x="509.57"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-6 svg-elem-59"x="521.95"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-60"x="534.34"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-61"x="546.73"y="135.51"width="8.14"height="8.14"></rect><rect class="cls-4 svg-elem-62"x="559.12"y="135.51"width="8.14"height="8.14"></rect><path class="cls-6 svg-elem-63"d="M325.3,99.3H271.18a3.63,3.63,0,0,0-3.63,3.63v34.34a3.64,3.64,0,0,0,3.63,3.63H275L283.29,152l1-11.09h41a3.63,3.63,0,0,0,3.63-3.63V102.93A3.62,3.62,0,0,0,325.3,99.3Z"></path><line class="cls-7 svg-elem-64"x1="277.79"y1="110.48"x2="319.73"y2="110.48"></line><line class="cls-7 svg-elem-65"x1="277.79"y1="119.38"x2="319.73"y2="119.38"></line><line class="cls-7 svg-elem-66"x1="277.79"y1="128.27"x2="319.73"y2="128.27"></line><path class="cls-4 svg-elem-67"d="M554.72,364.62c-4.24,0-8.48-2.71-10.74-4.83a2.24,2.24,0,1,1,3.06-3.28c.06.06,6.85,6.26,10.83,2.29,3.44-3.45,7-10.35,6.94-16.33a9.72,9.72,0,0,0-3-7.22c-1.8-1.67-3.53-2.41-5.15-2.2-2.82.36-4.79,3.4-4.81,3.43a2.24,2.24,0,0,1-3.8-2.39c.12-.19,3.07-4.84,8-5.49,3-.4,6,.73,8.82,3.36a14.24,14.24,0,0,1,4.41,10.43c.13,7.3-4,15.38-8.26,19.58A8.66,8.66,0,0,1,554.72,364.62Z"></path><path class="cls-5 svg-elem-68"d="M552.6,359.8a16.75,16.75,0,0,1-5.56-3.29,2.24,2.24,0,1,0-3.06,3.28,19.06,19.06,0,0,0,8.28,4.55Z"></path><path class="cls-5 svg-elem-69"d="M548.07,334.09a2.24,2.24,0,0,0,3.8,2.39,9.57,9.57,0,0,1,2.68-2.63l.37-5A13,13,0,0,0,548.07,334.09Z"></path><polygon class="cls-4 svg-elem-70"points="549.63 375.35 519.9 375.35 516.18 325.8 553.35 325.8 549.63 375.35"></polygon><ellipse class="cls-6 svg-elem-71"cx="530.52"cy="347.51"rx="8.08"ry="14.49"></ellipse><path class="cls-3 svg-elem-72"d="M513.11,277.4a28.45,28.45,0,0,1,1.71-4.6"></path><path class="cls-3 svg-elem-73"d="M522.08,321.34s8.36-8.37-.56-18.41c-6.69-7.52-9.93-14.73-9-22.33"></path><path class="cls-3 svg-elem-74"d="M539.5,307.79a16.49,16.49,0,0,0-1.8-4.31"></path><path class="cls-3 svg-elem-75"d="M538.25,321.34a22.9,22.9,0,0,0,1.8-10"></path><path class="cls-6 svg-elem-76"d="M439.06,88.79a19.85,19.85,0,0,0-26.13-28.35,23.52,23.52,0,0,0,.24-3.27,22.7,22.7,0,0,0-44.87-4.85h-.53a22.69,22.69,0,0,0-18,36.48Z"></path><line class="cls-3 svg-elem-77"x1="373.45"y1="105.81"x2="373.45"y2="78.94"></line><polygon class="cls-2 svg-elem-78"points="378.43 80.4 373.45 71.76 368.46 80.4 378.43 80.4"></polygon><line class="cls-3 svg-elem-79"x1="405.87"y1="73.39"x2="405.87"y2="95.39"></line><polygon class="cls-2 svg-elem-80"points="400.88 93.93 405.87 102.57 410.86 93.93 400.88 93.93"></polygon><rect class="cls-5 svg-elem-81"x="218.91"y="244.34"width="71.91"height="131.01"rx="4.12"></rect><rect class="cls-4 svg-elem-82"x="216.99"y="244.34"width="71.91"height="131.01"rx="4.12"></rect><rect class="cls-6 svg-elem-83"x="224.6"y="256.18"width="56.68"height="105.63"></rect><circle class="cls-8 svg-elem-84"cx="252.94"cy="291.25"r="23.26"></circle><rect class="cls-8 svg-elem-85"x="248.69"y="294.44"width="7.44"height="7.44"></rect><path class="cls-8 svg-elem-86"d="M245,284.39s-1.17-2.35-2.22-.78.67,3.51,1.18,5,1.17.78,1.17.78Z"></path><path class="cls-8 svg-elem-87"d="M260.1,284.39s1.18-2.35,2.22-.78-.67,3.51-1.17,5-1.18.78-1.18.78Z"></path><path class="cls-8 svg-elem-88"d="M252.66,297.8h-.38A7.78,7.78,0,0,1,244.5,290v-8.75c0-4.31,3.48-7.31,7.78-7.31h.38c4.3,0,7.79,3,7.79,7.31V290A7.79,7.79,0,0,1,252.66,297.8Z"></path><path class="cls-8 svg-elem-89"d="M253.49,284.25v3.61s.86.07.55.86-1.18,1.49-2.67.47"></path><path class="cls-2 svg-elem-90"d="M249,285c0,.82-.27,1.5-.59,1.5s-.59-.68-.59-1.5.27-1.51.59-1.51S249,284.15,249,285Z"></path><path class="cls-2 svg-elem-91"d="M256.78,285c0,.82-.26,1.5-.59,1.5s-.59-.68-.59-1.5.27-1.51.59-1.51S256.78,284.15,256.78,285Z"></path><path class="cls-8 svg-elem-92"d="M249.47,290.52a8.86,8.86,0,0,0,3.52,1.31,6.22,6.22,0,0,0,3.14-1.44"></path><path class="cls-8 svg-elem-93"d="M247,282.3a3.25,3.25,0,0,1,3.39-.39"></path><path class="cls-8 svg-elem-94"d="M254.43,282s1.3-1.57,3.65.39"></path><path class="cls-9 svg-elem-95"d="M244.51,284.52s.52-4.57,1.31-5.09,2.48-1.57,2.87-1.83a3.41,3.41,0,0,0,.78-1s0-4.31-1.44-4.31a4.05,4.05,0,0,0-4.17,4.44C243.86,278.79,244.51,284.52,244.51,284.52Z"></path><path class="cls-9 svg-elem-96"d="M248.69,277.6s1.91-1.45,5.64.23,5.4,4.2,5.77,6.56.37,8.38.37,8.38,4.34-1.93,4.82-8.8-1.44-12.4-7.83-14.33a9.69,9.69,0,0,0-10.11,2.53Z"></path><path class="cls-9 svg-elem-97"d="M269.59,307.48c-3.2-1.83-10.81-5.81-17.12-6.06s-13.41,4.16-16.15,6.09a23.23,23.23,0,0,0,33.27,0Z"></path><path class="cls-8 svg-elem-98"d="M247.38,313.84a23.64,23.64,0,0,0,5.56.67,23.19,23.19,0,0,0,4.75-.49V302.31a23.3,23.3,0,0,0-5.22-.89,17.06,17.06,0,0,0-5.09.64Z"></path><rect class="cls-8 svg-elem-99"x="246.08"y="298.75"width="12.79"height="5.35"rx="1.86"></rect><line class="cls-10 svg-elem-100"x1="247.64"y1="298.88"x2="247.64"y2="302.53"></line><line class="cls-10 svg-elem-101"x1="248.82"y1="303.84"x2="248.82"y2="300.44"></line><line class="cls-10 svg-elem-102"x1="250.91"y1="298.75"x2="250.91"y2="302.01"></line><line class="cls-10 svg-elem-103"x1="254.69"y1="304.1"x2="254.69"y2="301.75"></line><line class="cls-1 svg-elem-104"x1="64.65"y1="375.35"x2="596.63"y2="375.35"></line><line class="cls-1 svg-elem-105"x1="37.03"y1="375.35"x2="51.35"y2="375.35"></line><polygon class="cls-4 svg-elem-106"points="282.56 199.37 282.56 209.36 295.13 216.62 295.13 192.11 282.56 199.37"></polygon><rect class="cls-4 svg-elem-107"x="276.61"y="199.37"width="5.95"height="9.92"></rect></svg></div></div><div class="columns is-vcentered pb-40 pt-40">< !-- This column will display only on mobile --><div class="column is-4 is-offset-1 is-hidden-tablet is-hidden-desktop">< !-- Title --><div class="icon-subtitle"><i class="im im-icon-Video-2"></i></div><div class="title quick-feature has-numbers text-bold"><h2>On Demand Videos</h2><div class="bg-number">$</div></div><div class="title-divider is-small"></div><span class="body-text"
+                                    >Lorem ipsum dolor sit amet,
+                                    clita laoreet ne cum. His cu harum inermis iudicabit. Ex vidit fierent hendrerit eum,
+                                    sed stet periculis ut.</span><div class="pt-10 pb-10"><a href="#"class="button btn-align btn-more is-link color-primary">Learn more <i class="sl sl-icon-arrow-right"></i></a></div></div>< !-- /so the original floww is kept --><div class="column is-6"><style>
                                     /***************************************************
                         * Generated by SVG Artista on 3/7/2022, 4:44:34 AM
                         * MIT license (https://opensource.org/licenses/MIT)
@@ -12104,20 +10657,19 @@
 
                     <div class="column is-4 is-offset-1 is-hidden-mobile">
                         <!-- Title -->
-                        
+                        <div class="icon-subtitle"><i class="im im-icon-Video-2"></i></div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <h2>
-                                <div class="glitch" data-text="User centric">User centric</div>
-                            </h2>
-                            <div class="bg-number"><i class="fa-brands fa-android"></i></div>
+                            <h2>On Demand Videos</h2>
+                            <div class="bg-number">$</div>
                         </div>
                         <div class="title-divider is-small"></div>
                         <span class="body-text"
-                >Storing sensitive personal data increases your data management costs and the risk of infringing privacy regulations. 
-                PandoraID allows you to verify and authenticate any user data without having to store it on your systems</span>
+                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
-                                Learn more <i class="fa-solid fa-angle-right"></i>
+                                Learn more <i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -12136,24 +10688,21 @@
                 <div class="columns is-vcentered pb-40 pt-40">
                     <div class="column is-4 is-offset-1">
                         <!-- Title -->
-                        
+                        <div class="icon-subtitle">
+                            <i class="im im-icon-Business-ManWoman"></i>
+                        </div>
                         <div class="title quick-feature has-numbers text-bold">
-                            <h2>
-                                <div class="glitch" data-text="Go passwordless">Go passwordless</div>
-                            </h2>
-                            <div class="bg-number"> <i class="fa-solid fa-unlock-keyhole"></i></div>
+                            <h2>Talented Professors</h2>
+                            <div class="bg-number">@</div>
                         </div>
                         <div class="title-divider is-small"></div>
                         <span class="body-text"
-                >Removing passwords from your login process increases authentication security and 
-                improves the user experience by removing friction. 
-                After you integrate with PandoraID your users will be able to login with one click. 
-                In the background your system will ask the user's Decentralized ID Wallet for the required login credentials. 
-                It all happens in a fraction of a second. The result? Secure and instant authentication.
-    </span>
+                >Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                inermis iudicabit. Ex vidit fierent hendrerit eum, sed stet
+                periculis ut.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-primary">
-                                Start Now <i class="fa-solid fa-angle-right"></i>
+                                Learn more <i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
@@ -12162,7 +10711,7 @@
                     </div>
                 </div>
                 <div class="has-text-centered is-title-reveal pt-20 pb-20">
-                    <a href="/signup.html" class="button button-cta primary-btn testing raised" style="display: inline-flex;">Start Using Now!</a>
+                    <a href="#" class="button button-cta primary-btn rounded raised">Start your Free trial</a>
                 </div>
             </div>
         </div>
@@ -12174,11 +10723,9 @@
         <div class="container">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered pb-60">
-                <div class="bg-number"><i class="fa-solid fa-fingerprint"></i></div>
-                <h2 class="section-title-landing">
-                    <div class="glitch" data-text="How it Works" style="width: fit-content;">How it Works</div>
-                </h2>
-                <h4>We're fighting for a future where big corporations cannot use and abuse your data. That's why we created a decentralized identity & authentication platform.</h4>
+                <div class="bg-number">3</div>
+                <h2 class="section-title-landing">How it Works</h2>
+                <h4>Discover aen easy to use Project Management solution</h4>
             </div>
 
             <!-- Feature -->
@@ -12196,12 +10743,13 @@
 
                 <div class="column is-4">
                     <h2 class="title quick-feature is-smaller text-bold no-margin">
-                        The Web Wallet
+                        Meet people and discuss your projects
                     </h2>
-                    <span class="section-feature-description">The Web Wallet is where your user's ID & Access Credentials are stored. It's a personal cloud vault that can only be accessed and managed by the user.</span>
+                    <span class="section-feature-description">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.</span>
                     <div class="pt-10 pb-10">
-                        <a href="/application.html" class="button btn-align btn-more is-link color-primary">
-                            Download Application <i class="fa-solid fa-angle-right"></i>
+                        <a href="#" class="button btn-align btn-more is-link color-primary">
+                            Learn more about this <i class="sl sl-icon-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -12222,15 +10770,13 @@
 
                 <div class="column is-4 is-offset-1">
                     <h2 class="title quick-feature is-smaller text-bold no-margin">
-                        Authentication in Progress
+                        Watch inspiring presentations
                     </h2>
-                    <span class="section-feature-description">When you want to verify or authenticate a user, 
-                  PandoraID APIs automatically check the blockchain to confirm the authenticity of the user's credentials. 
-                  The decentralized and immutable nature of blockchain is what allows Verifiable Credentials to be verifiable anywhere,
-                   at any time, without the need to be connected with the credential issuer.</span>
+                    <span class="section-feature-description">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.</span>
                     <div class="pt-10 pb-10">
-                        <a href="/technical.html" class="button btn-align btn-more is-link color-primary">
-                            Technical Architecture <i class="fa-solid fa-angle-right"></i>
+                        <a href="#" class="button btn-align btn-more is-link color-primary">
+                            Learn more about this <i class="sl sl-icon-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -12261,14 +10807,13 @@
 
                 <div class="column is-4">
                     <h2 class="title quick-feature is-smaller text-bold no-margin">
-                        Unlock new business opportunities
+                        Uncover new business opportunities
                     </h2>
-                    <span class="section-feature-description">Digital identification, or 
-                  “digital ID,” can be authenticated unambiguously through a digital channel,
-                   unlocking access to banking, government benefits, education, and many other critical services.</span>
+                    <span class="section-feature-description">Lorem ipsum dolor sit amet, clita laoreet ne cum. His cu harum
+                  inermis iudicabit.</span>
                     <div class="pt-10 pb-10">
-                        <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/digital-identification-a-key-to-inclusive-growth" class="button btn-align btn-more is-link color-primary">
-                            Learn more about this <i class="fa-solid fa-angle-right"></i>
+                        <a href="#" class="button btn-align btn-more is-link color-primary">
+                            Learn more about this <i class="sl sl-icon-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -12280,14 +10825,12 @@
 
 
     <!-- Services -->
-    <div class="section is-app-grey is-medium">
+    <div class="section is-medium">
         <div class="container">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered">
-                <div class="bg-number"><i class="fa-solid fa-lamp-desk"></i></div>
-                <h2 class="section-title-landing">
-                    <div class="glitch" style="width: fit-content;" data-text="Learn To implement PandoraID">Learn To implement PandoraID </div>
-                </h2>
+                <div class="bg-number">3</div>
+                <h2 class="section-title-landing">Learn Fast, Learn Good.</h2>
                 <h4>Don't waste your time anymore</h4>
             </div>
 
@@ -12298,49 +10841,55 @@
                         <div class="columns is-vcentered">
                             <div class="column is-6">
                                 <!-- Hover box -->
-                                <a href="https://youtube.com">
-                                    <div class="flex-card icon-card-hover first-card light-bordered">
-                                        <h3 class="card-title is-clean">Learn Faster With Our YouTube</h3>
-
-                                    </div>
-                                </a>
-
+                                <div class="flex-card icon-card-hover first-card light-bordered">
+                                    <h3 class="card-title is-clean">Learn Faster</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
                                 <!-- Hover box -->
-                                <a href="https://runkit.com/elmtalab">
-                                    <div class="flex-card icon-card-hover second-card light-bordered">
-                                        <h3 class="card-title is-clean">Learn Best Practices in JavaScript</h3>
-
-                                    </div>
+                                <div class="flex-card icon-card-hover second-card light-bordered">
+                                    <h3 class="card-title is-clean">Learn Best Practices</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
                             </div>
                             <div class="column is-6">
-                                </a>
-
-
                                 <!-- Hover box -->
-                                <a href="https://colab.research.google.com/drive/1KZz24Az9I3oD8M5awDq6CKAymrQyDr5c?usp=sharing">
-                                    <div class="flex-card icon-card-hover third-card light-bordered">
-                                        <h3 class="card-title is-clean">Documentation and Sample Code</h3>
-
-                                    </div>
-                                </a>
-
-
-
+                                <div class="flex-card icon-card-hover third-card light-bordered">
+                                    <h3 class="card-title is-clean">Experiment Peer Review</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
                                 <!-- Hover box -->
-                                <a class="" href="/contribute.html">
-                                    <div class="flex-card icon-card-hover fourth-card light-bordered">
-                                        <h3 class="card-title is-clean">Contribute to our Ecosystem</h3>
-
-                                    </div>
-                                </a>
-
-
-
+                                <div class="flex-card icon-card-hover fourth-card light-bordered">
+                                    <h3 class="card-title is-clean">Grow your skills</h3>
+                                    <p class="card-description">
+                                        Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no,
+                                        has eu lorem convenire incorrupte.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="button-wrap has-text-centered is-title-reveal">
+                    <a href="kit2-signup.html" class="
+                button button-cta
+                is-rounded
+                btn-align
+                raised
+                primary-btn
+                raised
+              ">
+                        Start your Free Trial
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -12353,10 +10902,9 @@
         <div class="container is-reverse-skewed-sm">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered">
-                <div class="bg-number"><i class="fa-brands fa-hive"></i></div>
-                <h2 class="section-title-landing">
-                    <div class="glitch" data-text="We got your back" style="width: fit-content;">We got your back </div>
-                </h2>
+                <div class="bg-number">5</div>
+                <h2 class="section-title-landing">We got you covered</h2>
+                <h4>Every business matters, learn how we handle it.</h4>
             </div>
 
             <!-- Content -->
@@ -12368,21 +10916,17 @@
                                 Every business matters. We give you tools to succeed.
                             </h2>
                             <p>
-                                Individuals can use identification to interact with businesses,
-                                governments, and other individuals in six roles: as consumers, workers, microenterprises,
-                                taxpayers and beneficiaries, civically engaged individuals, and asset owners.
-
+                                Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no, has
+                                eu lorem convenire incorrupte.
                             </p>
                             <p>
-                                Correspondingly, institutions can use an individual's identity in a variety of positions:
-                                as commercial providers of goods and services, interacting with consumers;
-                                as employers, interacting with workers; as public providers of goods and services,
-                                interacting with beneficiaries; as governments, interacting with civically minded individuals;
-                                and as asset registers, interacting with individual asset owners.
+                                Lorem ipsum dolor sit amet, vim quidam blandit voluptaria no, has
+                                eu lorem convenire incorrupte. Vis mutat altera percipit ad, ipsum
+                                prompta ius eu. Sanctus appellantur vim ea.
                             </p>
                             <div class="button-wrap">
-                                <a href="kit2-signup.html" class="button button-cta btn-align raised testing primary-btn" style="display: inline-flex;">
-                                    Try it for yourself
+                                <a href="kit2-signup.html" class="button button-cta btn-align raised primary-btn">
+                                    Try it free
                                 </a>
                             </div>
                         </div>
@@ -12391,41 +10935,24 @@
                     <div class="column is-4 is-offset-1">
                         <div class="flex-card company-types">
                             <div class="icon-group">
-
-                                <lord-icon src="https://cdn.lordicon.com/slkvcfos.json" trigger="morph-two-way" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Online Stores</span>
-                            </div>
-
-                            <div class="icon-group">
-                                <lord-icon src="https://cdn.lordicon.com/jjjmlddk.json" trigger="morph-two-way" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Government Services</span>
+                                <img src="assets/img/graphics/icons/store-core.svg" data-base-url="assets/img/graphics/icons/store" data-extension=".svg" alt="" />
+                                <span>Online stores</span>
                             </div>
                             <div class="icon-group">
-                                <lord-icon src="https://cdn.lordicon.com/rqqkvjqf.json" trigger="morph" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Financial Services</span>
+                                <img src="assets/img/graphics/icons/bank-core.svg" data-base-url="assets/img/graphics/icons/bank" data-extension=".svg" alt="" />
+                                <span>Finance services</span>
                             </div>
                             <div class="icon-group">
-                                <lord-icon src="https://cdn.lordicon.com/huwchbks.json" trigger="morph-two-way" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Crypto Exchange</span>
+                                <img src="assets/img/graphics/icons/factory-core.svg" data-base-url="assets/img/graphics/icons/factory" data-extension=".svg" alt="" />
+                                <span>Industry</span>
                             </div>
-
-
                             <div class="icon-group">
-                                <lord-icon src="https://cdn.lordicon.com/uqpazftn.json" trigger="loop" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Seamless User Onboarding</span>
+                                <img src="assets/img/graphics/icons/church-core.svg" data-base-url="assets/img/graphics/icons/church" data-extension=".svg" alt="" />
+                                <span>Churches</span>
                             </div>
-
-
-
                             <div class="icon-group">
-                                <lord-icon src="https://cdn.lordicon.com/itmmouju.json" trigger="loop" colors="primary:#c9cfd3,secondary:#8c8cf9" style="width:64px;height:64px">
-                                </lord-icon>
-                                <span>Supply Chain Management</span>
+                                <img src="assets/img/graphics/icons/warehouse-core.svg" data-base-url="assets/img/graphics/icons/warehouse" data-extension=".svg" alt="" />
+                                <span>Logistics</span>
                             </div>
                         </div>
                     </div>
@@ -12439,17 +10966,13 @@
         <div class="container">
             <!-- Title -->
             <div class="section-title-wrapper has-text-centered">
-                <div class="bg-number"><i class="fa-solid fa-code"></i></div>
-                <h2 class="section-title-landing">
-                    <div class="glitch" data-text="Ship Fast with Our Sample Code" style="width: fit-content;">Ship Fast with Our Sample Code</div>
-                </h2>
-                <lord-icon src="https://cdn.lordicon.com/elvincae.json" trigger="loop" colors="primary:#111111,secondary:#8c8cf9" style="width:250px;height:250px">
-                </lord-icon>
-                
+                <div class="bg-number">5</div>
+                <h2 class="section-title-landing">Learn any Language</h2>
+                <h4 class="mb-20">And get a job within 6 months</h4>
 
                 <div class="button-wrap has-text-centered is-title-reveal mb-40">
-                    <a href="quickstart.html" class="button button-cta btn-align raised primary-btn testing raised" style="display: inline-flex;">
-                        Start Coding Now!
+                    <a href="kit2-signup.html" class="button button-cta btn-align raised primary-btn raised">
+                        Start your Free Trial
                     </a>
                 </div>
             </div>
@@ -12551,46 +11074,21 @@
              </code></pre>
                             </div>
 
-
-
-
-
-
                             <!--Javascript backend sample-->
                             <div data-backend-sample="javascript">
-
-
-
-                                <pre class="hljs" style="overflow: auto; background: rgb(43, 43, 43); color: rgb(186, 186, 186);"><span class="hljs-comment" style="color: rgb(127, 127, 127);">// program to find the factorial of a number</span>
-    
-    <span class="hljs-comment" style="color: rgb(127, 127, 127);">// take input from the user</span>
-    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">const</span> number = <span class="hljs-built_in" style="color: rgb(224, 196, 108);">parseInt</span>(prompt(<span class="hljs-string" style="color: rgb(224, 196, 108);">'Enter a positive integer: '</span>));
-    
-    <span class="hljs-comment" style="color: rgb(127, 127, 127);">// checking if number is negative</span>
-    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">if</span> (number &lt; <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span>) {
-        <span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(<span class="hljs-string" style="color: rgb(224, 196, 108);">'Error! Factorial for negative number does not exist.'</span>);
-    }
-    
-    <span class="hljs-comment" style="color: rgb(127, 127, 127);">// if number is 0</span>
-    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">else</span> <span class="hljs-keyword" style="color: rgb(203, 120, 50);">if</span> (number === <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span>) {
-        <span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(<span class="hljs-string" style="color: rgb(224, 196, 108);">`The factorial of <span class="hljs-subst" style="color: rgb(224, 196, 108);">${number}</span> is 1.`</span>);
-    }
-    
-    <span class="hljs-comment" style="color: rgb(127, 127, 127);">// if number is positive</span>
-    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">else</span> {
-        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">let</span> fact = <span class="hljs-number" style="color: rgb(104, 150, 186);">1</span>;
-        <span class="hljs-keyword" style="color: rgb(203, 120, 50);">for</span> (i = <span class="hljs-number" style="color: rgb(104, 150, 186);">1</span>; i &lt;= number; i++) {
-            fact *= i;
-        }
-        <span class="hljs-built_in" style="color: rgb(224, 196, 108);">console</span>.log(<span class="hljs-string" style="color: rgb(224, 196, 108);">`The factorial of <span class="hljs-subst" style="color: rgb(224, 196, 108);">${number}</span> is <span class="hljs-subst" style="color: rgb(224, 196, 108);">${fact}</span>.`</span>);
-    }</pre>
-
-
-
+                                <pre
+                    class="m-t-none m-b-none highlight javascript"
+                  ><code><span class="kr">const</span> <span class="nx">myData</span> <span class="o">=</span> <span class="nx">apiClient</span><span class="p">.</span><span class="nx">initDB</span><span class="p">(</span><span class="s1">'contacts'</span><span class="p">);</span>
+    <span class="nx">myData</span>
+    <span class="p">.</span><span class="nx">addObject</span><span class="p">({</span>
+        <span class="na">firstname</span><span class="p">:</span> <span class="s1">'John'</span><span class="p">,</span>
+        <span class="na">lastname</span><span class="p">:</span> <span class="s1">'Doe'</span><span class="p">,</span>
+        <span class="na">company</span><span class="p">:</span> <span class="s1">'Css Ninja'</span><span class="p">,</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">content</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">content</span><span class="p">))</span>
+    <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">));</span>
+             </code></pre>
                             </div>
-
-
-
 
                             <!--Java backend sample-->
                             <div data-backend-sample="java">
@@ -12605,10 +11103,6 @@
     <span class="o">);</span>
              </code></pre>
                             </div>
-
-
-
-
 
                             <!--Scala backend sample-->
                             <div data-backend-sample="scala">
@@ -13248,7 +11742,191 @@
         </div>
     </div>
 
+    <div class="section is-medium">
+        <div class="container">
+            <div class="container">
+                <!-- Title -->
+                <div class="section-title-wrapper has-text-centered">
+                    <div class="bg-number">6</div>
+                    <h2 class="section-title-landing">We are Trusted</h2>
+                    <h4>We helped more than 84,000 developers finding a job</h4>
+                </div>
 
+                <div class="content-wrapper">
+                    <!-- Testimonials -->
+                    <div class="columns">
+                        <div class="column is-10 is-offset-1">
+                            <div class="columns is-vcentered">
+                                <div class="column is-6">
+                                    <!-- Testimonial item -->
+                                    <div class="
+                        flex-card
+                        testimonial-card
+                        light-raised light-bordered
+                        padding-20
+                      ">
+                                        <div class="testimonial-title">Amazed by the product</div>
+                                        <div class="testimonial-text">
+                                            Lorem ipsum dolor sit amet, vim quidam blandit voluptaria
+                                            no, has eu lorem convenire incorrupte. Vis mutat altera
+                                            percipit ad.
+                                        </div>
+                                        <div class="user-id">
+                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/dan.png" />
+                                            <div class="info">
+                                                <div class="name clean-text">Dan Shwartz</div>
+                                                <div class="position">Software engineer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial item -->
+                                    <div class="
+                        flex-card
+                        testimonial-card
+                        light-raised light-bordered
+                        padding-20
+                      ">
+                                        <div class="testimonial-title">My tasks are now painless</div>
+                                        <div class="testimonial-text">
+                                            Lorem ipsum dolor sit amet, vim quidam blandit voluptaria
+                                            no, has eu lorem convenire incorrupte. Vis mutat altera
+                                            percipit ad.
+                                        </div>
+                                        <div class="user-id">
+                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/janet.jpg" />
+                                            <div class="info">
+                                                <div class="name clean-text">Jane Guzmann</div>
+                                                <div class="position">CFO</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-6">
+                                    <!-- Testimonial item -->
+                                    <div class="
+                        flex-card
+                        testimonial-card
+                        light-raised light-bordered
+                        padding-20
+                      ">
+                                        <div class="testimonial-title">Very nice support</div>
+                                        <div class="testimonial-text">
+                                            Lorem ipsum dolor sit amet, vim quidam blandit voluptaria
+                                            no, has eu lorem convenire incorrupte. Vis mutat altera
+                                            percipit ad.
+                                        </div>
+                                        <div class="user-id">
+                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/helen.jpg" />
+                                            <div class="info">
+                                                <div class="name clean-text">Hellen Miller</div>
+                                                <div class="position">Accountant</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial item -->
+                                    <div class="
+                        flex-card
+                        testimonial-card
+                        light-raised light-bordered
+                        padding-20
+                      ">
+                                        <div class="testimonial-title">My income has doubled</div>
+                                        <div class="testimonial-text">
+                                            Lorem ipsum dolor sit amet, vim quidam blandit voluptaria
+                                            no, has eu lorem convenire incorrupte. Vis mutat altera
+                                            percipit ad.
+                                        </div>
+                                        <div class="user-id">
+                                            <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/anthony.jpg" />
+                                            <div class="info">
+                                                <div class="name clean-text">Anthony Leblanc</div>
+                                                <div class="position">Founder at Hereby</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-clients five-grid pt-80 pb-80">
+                        <div class="columns is-vcentered">
+                            <div class="column is-hidden-mobile"></div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/gutwork.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/phasekit.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/grubspot.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/taskbot.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/systek.svg" alt="" /></a>
+                            </div>
+                            <div class="column is-hidden-mobile"></div>
+                        </div>
+                        <div class="columns is-vcentered is-separator">
+                            <div class="column is-hidden-mobile"></div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/infinite.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/tribe.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/powerball.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/kromo.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/covenant.svg" alt="" /></a>
+                            </div>
+                            <div class="column is-hidden-mobile"></div>
+                        </div>
+                        <div class="columns is-vcentered is-separator">
+                            <div class="column is-hidden-mobile"></div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/bitbreaker.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/evently.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/proactive.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/transfuseio.svg" alt="" /></a>
+                            </div>
+                            <!-- Client -->
+                            <div class="column">
+                                <a><img class="client" src="assets/img/logos/custom/livetalk.svg" alt="" /></a>
+                            </div>
+                            <div class="column is-hidden-mobile"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript">
         /*! qrcode-svg v1.1.0 | https://github.com/papnkukn/qrcode-svg | MIT license */
@@ -13969,7 +12647,7 @@
 
         var svg = new QRCode({
             content: "Hello World!",
-            padding: 0.7,
+            padding: 1,
             width: "100",
             height: "100",
             color: "#000000",
@@ -13984,48 +12662,33 @@
 
 
 
-
-    <script type="text/javascript">
-        document.getElementById("send-email-button").addEventListener("click", () => {
-            var email = document.getElementById('email').value;
-            var http = new XMLHttpRequest();
-            var url = 'https://webhook.site/71c3dae3-5603-4123-b233-65d71f70ad6c';
-            var params = 'orem=ipsum&name=binny';
-            http.open('POST', url, true);
-
-            ///to-do
-            //Send the proper header information along with the request
-            //http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-            http.onreadystatechange = function() { //Call a function when the state changes.
-                if (http.readyState == 4 && http.status == 200) {
-                    alert(http.responseText);
-                }
-            }
-            http.send(params);
-
-
-        });
-    </script>
-
-
-
-
-
     <footer class="footer-light-medium">
         <div class="container">
-
+            <div class="footer-head">
+                <div class="head-text">
+                    <h3>Ready to get started?</h3>
+                    <p>Create your free account now</p>
+                </div>
+                <div class="head-action">
+                    <div class="buttons">
+                        <a class="button primary-btn raised action-button is-bold">Try it free</a>
+                        <a class="button chat-button">Chat with us</a>
+                    </div>
+                </div>
+            </div>
             <div class="columns footer-body">
                 <!-- Column -->
                 <div class="column is-4">
                     <div class="pt-10 pb-10">
-                        <img class="small-footer-logo" src="assets/img/logos/logo/pandoraID5.svg" alt="">
+                        <img class="small-footer-logo" src="assets/img/logos/bulkit-logo-g.png" alt="">
                         <div class="footer-description">
-                            Self-sovereign identity (SSI) is an approach to digital identity that gives individuals control of their digital identities. SSI addresses the difficulty of establishing trust in an interaction. In order to be trusted, one party in an interaction will present credentials to the other parties, and those relying parties can verify that the credentials came from an issuer that they trust. In this way, the verifier's trust in the issuer is transferred to the credential holder.
+                            Bulkit is built for developers and designers. It's modular approach lets you create an original
+                            landing page for your brand.
                         </div>
                     </div>
                     <div>
-                        <span class="moto">Designed and coded with <i class="fa fa-heart color-red"></i> by Amir H. Elmtalab</span>
+                        <span class="moto">Designed and coded with <i class="fa fa-heart color-red"></i> by CSS
+                            Ninja.</span>
                         <div class="social-links">
                             <a href="#">
                                 <span class="icon"><i class="fa fa-facebook"></i></span>
@@ -14052,12 +12715,12 @@
                         <div class="column">
                             <ul class="footer-column">
                                 <li class="column-header">
-                                    PandoraID
+                                    Bulkit
                                 </li>
-                                <li class="column-item"><a href="#">Docs</a></li>
+                                <li class="column-item"><a href="#">Home</a></li>
                                 <li class="column-item"><a href="#">Pricing</a></li>
-                                <li class="column-item"><a href="#">Dashboard</a></li>
-                                <li class="column-item"><a href="#">Application</a></li>
+                                <li class="column-item"><a href="#">Get started</a></li>
+                                <li class="column-item"><a href="#">Help</a></li>
                             </ul>
                         </div>
                         <!-- Column -->
@@ -14066,7 +12729,7 @@
                                 <li class="column-header">
                                     Ressources
                                 </li>
-                                <li class="column-item"><a href="/whitepaper.html">Whitepaper</a></li>
+                                <li class="column-item"><a href="#">Learning</a></li>
                                 <li class="column-item"><a href="#">Support center</a></li>
                                 <li class="column-item"><a href="#">Frequent questions</a></li>
                                 <li class="column-item"><a href="#">Schedule a demo</a></li>
@@ -14087,7 +12750,7 @@
                 </div>
             </div>
             <div class="footer-copyright has-text-centered">
-                <p>&copy; 2022 | <a href="https://cssninja.io">PandoraID</a> | All Rights Reserved.</p>
+                <p>&copy; 2019-2020 | <a href="https://cssninja.io">Css Ninja</a> | All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -14496,6 +13159,59 @@
     <!-- /Side navigation -->
     <!-- Back To Top Button -->
     <div id="backtotop"><a href="#"></a></div>
+    <!-- Bulchat Button -->
+    <div id="bulchat" class="open">
+        <div class="chat-button open g-item"></div>
+    </div> <!-- Chat widget -->
+    <div id="chat-widget">
+        <div class="chat-widget-body is-closed">
+            <div class="chat-header">
+                <div class="close-chat is-hidden-desktop is-hidden-tablet"><img src="assets/img/graphics/legacy/close-small.svg" alt=""></div>
+                <div class="chat-team">
+                    <div class="team-member has-text-centered">
+                        <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                        <div class="is-handwritten">Alan maynard</div>
+                    </div>
+                </div>
+                <div class="response-delay has-text-centered">
+                    Answers in less than 18 hours
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="divider">
+                    <span class="before-divider"></span>
+                    <div class="children">Today</div>
+                    <span class="after-divider"></span>
+                </div>
+                <div class="chat-message from">
+                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/alan.jpg">
+                    <div class="bubble-wrapper">
+                        <div class="timestamp">02:49 pm</div>
+                        <div class="chat-bubble">
+                            Hey iam Alan ! Iam here to help. What can i do for you ?
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-message to">
+                    <div class="bubble-wrapper">
+                        <div class="timestamp">02:48 pm</div>
+                        <div class="chat-bubble">
+                            Hello, someone out there ? I could use some help
+                        </div>
+                    </div>
+                    <img src="https://via.placeholder.com/250x250" alt="" data-demo-src="assets/img/avatars/helen.jpg">
+                </div>
+            </div>
+            <div class="message-input">
+                <textarea class="" rows="1" placeholder="Send a message ..."></textarea>
+                <div class="message-options">
+                    <div class="emoji-button"></div>
+                    <div class="attach-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Chat widget -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/core.js"></script>

@@ -14043,9 +14043,12 @@
             }
         }, "undefined" != typeof module && (module.exports = QRCode);
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
 
-        var svg = new QRCode({
-            content: "Hello World!",
+const public_key = "GASG2BESOXOHKWACFYDQ47BQULECR77D2OZ7FPH3C6KECANSFJBEVT37"
+              var svg = new QRCode({content: public_key +":"+ getRandomInt(9223372036854775808).toString() ,
             padding: 0.7,
             width: "100",
             height: "100",

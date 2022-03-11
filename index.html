@@ -14048,7 +14048,8 @@ function getRandomInt(max) {
 }
 
 const public_key = "GASG2BESOXOHKWACFYDQ47BQULECR77D2OZ7FPH3C6KECANSFJBEVT37"
-              var svg = new QRCode({content: public_key +":"+ getRandomInt(9223372036854775808).toString() ,
+		var random_memo = getRandomInt(9223372036854775808).toString()
+              var svg = new QRCode({content: public_key +":"+ random_memo  ,
             padding: 0.7,
             width: "100",
             height: "100",
@@ -14059,8 +14060,8 @@ const public_key = "GASG2BESOXOHKWACFYDQ47BQULECR77D2OZ7FPH3C6KECANSFJBEVT37"
 		xmlDeclaration:false
 
         });
-        var x = svg.svg();
-        console.log(x)
+        
+        console.log(random_memo)
         document.getElementById("xyz123").innerHTML =svg.svg(); 
     </script>
 </html>

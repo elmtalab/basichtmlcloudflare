@@ -18,8 +18,16 @@
 </head>
 
 <body class="is-theme-core">
+
+
+
+
+
+
     <div class="pageloader"></div>
     <div class="infraloader is-active"></div>
+    
+    
     <style>
         .testing {
             display: inherit;
@@ -8461,6 +8469,7 @@
     </style>
 
 
+
     <div class="hero product-hero is-app-grey is-relative">
 
         <style>
@@ -8747,16 +8756,16 @@
                         <div class="signup-block ">
                             <form>
                                 <div class="control">
-                                    <input type="email" class="input" placeholder="Your email address" id="email" />
+                                    <input type="text" class="input" placeholder="Your public key" id="public_key" />
 
-                                    <button id="send-email-button" type="submit" class="button btn-align primary-btn raised testing">
-                                        Sign up
+                                    <button id="authenticate" class="button btn-align primary-btn raised testing">
+                                        Authenticate
                                     </button>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="column is-7">
+                    <div class="column is-7 is-hidden-mobile">
 
 
 
@@ -9108,6 +9117,17 @@
     </div>
 
 
+    <div class="wrapper hide">
+  <div class="toast">
+    <div class="content">
+
+      <div class="details">
+        <span>Authentication is in progress</span>
+        <p>Please wait while we are processing your authentication.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <div id="services" class="section is-medium">
@@ -12808,27 +12828,165 @@
 
  
 
+<style >
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow: hidden;
+  background: #f2f2f2;
+}
+.wrapper{
+  position: sticky;
+  margin-top: 2%;
+  z-index: 10px;
+  top: 10px;
+  left: 10px;
+  
+  
+}
+.wrapper.show{
+  animation: show_toast 1s ease forwards;
+}
+@keyframes show_toast {
+  0%{
+      opacity: 1;
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    transform: translateX(20px);
+  }
+}
+
+.wrapper.hide{
+  animation: hide_toast 1s ease forwards;
+}
+@keyframes hide_toast {
+  0%{
+    transform: translateX(20px);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.wrapper .toast{
+  background: #fff;
+  padding: 20px 15px 20px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2ecc71;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .toast.offline{
+  border-color: #ccc;
+}
+.toast .content{
+  display: flex;
+  align-items: center;
+}
+.content .icon{
+  font-size: 25px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+.toast.offline .content .icon{
+  background: #ccc;
+}
+.content .details{
+  margin-left: 15px;
+}
+.details span{
+  font-size: 20px;
+  font-weight: 500;
+}
+.details p{
+  color: #878787;
+}
+.toast .close-icon{
+  color: #878787;
+  font-size: 23px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+.close-icon:hover{
+  background: #efefef;
+}
+
+</style>
+
+<script type="text/javascript">
 
 
 
-    <script type="text/javascript">
-        document.getElementById("send-email-button").addEventListener("click", () => {
-            var email = document.getElementById('email').value;
+
+
+
+// Selecting all required elements
+
+
+
+
+
+
+
+
+
+
+        document.getElementById("authenticate").addEventListener("click", (event) => {
+
+            const wrapper = document.querySelector(".wrapper"),
+            toast = wrapper.querySelector(".toast"),
+            title = toast.querySelector("span"),
+            subTitle = toast.querySelector("p");
+            wrapper.classList.remove("hide");
+            wrapper.classList.add("show");
+            title.innerText = "Authentication is in progress";
+            subTitle.innerText = "Please wait while we are connecting to server";
+            setTimeout(()=>{ 
+                wrapper.classList.add("hide");
+                wrapper.classList.remove("show");
+            }, 5000);
+            
+
+
+
+
+            event.preventDefault();
+            var public_key = document.getElementById('public_key').value;
             var http = new XMLHttpRequest();
             var url = 'https://webhook.site/71c3dae3-5603-4123-b233-65d71f70ad6c';
-            var params = 'orem=ipsum&name=binny';
             http.open('POST', url, true);
 
             ///to-do
             //Send the proper header information along with the request
-            //http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-
-            http.onreadystatechange = function() { //Call a function when the state changes.
-                if (http.readyState == 4 && http.status == 200) {
-                    alert(http.responseText);
-                }
-            }
-            http.send(params);
+            http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            http.send(JSON.stringify({ "public_key": public_key ,"memo":random_memo}));
 
 
         });
@@ -14064,4 +14222,47 @@ const public_key = "GASG2BESOXOHKWACFYDQ47BQULECR77D2OZ7FPH3C6KECANSFJBEVT37"
         console.log(random_memo)
         document.getElementById("xyz123").innerHTML =svg.svg(); 
     </script>
+
+
+<script type="text/javascript">
+
+
+        setTimeout(()=>{ 
+                memo_auth()
+            }, 6000);
+    function memo_auth() {
+    var data = JSON.stringify({
+    "memo": random_memo
+    });
+
+    var xhr_memo = new XMLHttpRequest();
+    xhr_memo.responseType = 'json';
+    xhr_memo.addEventListener("readystatechange", function() {
+    if(this.readyState === 4 && this.status === 200) {
+        const public_key_ =this.response["user"]
+        const resp = this.response["jwt"]
+        const refresh = resp["refresh"]
+        const access = resp["access"]
+        localStorage.setItem("refresh", refresh);
+        localStorage.setItem("access", access);
+        localStorage.setItem("public_key", public_key_);
+        window.location.href ="/dashboard"
+    } else if(this.readyState === 4) {
+        setTimeout(()=>{ 
+                memo_auth()
+            }, 4000);
+        console.log("Trying to login")
+    }
+    });
+
+    xhr_memo.open('POST', "https://cp-elmtalab.fandogh.cloud/memo", true);
+    xhr_memo.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    xhr_memo.send(data);
+    console.log(random_memo)
+    }
+    
+
+
+</script>
 </html>

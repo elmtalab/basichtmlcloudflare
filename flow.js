@@ -51,7 +51,7 @@ function kyc_item_flow(id){
             var href = kyc_item_["href"];
             nestable_ += `<li class="dd-item dd3-item" data-id="${kyc_item_id}" onclick="kyc_item_flow(${kyc_item_id})">   
 										<div class="dd3-content" style="height: fit-content;display: block ruby;height: 35px;" >${kyc_item_content}  
-										<div style="float: inline-end;" ><div class="btn-group">
+										<div style="float: initial;" ><div class="btn-group">
 											<button type="button " class="button primary-btn1" onclick="" style="width: 100px;">${kyc_item_button_content}</button>
 										</div>
                                         </div>

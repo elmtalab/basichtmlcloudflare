@@ -68,7 +68,7 @@ function kyc_item_flow(id){
 
     xhr_memo.open('POST', "https://kyc-flow.elmtalab3638.workers.dev", true);
     xhr_memo.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhr_memo.send(data);
+    xhr_memo.send(data);
             
           }
 
